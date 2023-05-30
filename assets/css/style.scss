@@ -1219,7 +1219,17 @@ h6,
                     }
                 }
 
-                .more_text {}
+                .more_text {
+                    font-size: 12px;
+                    font-weight: 500;
+
+                    color: #202121;
+                    transition: color .2s ease;
+
+                    &:hover {
+                        color: #0036b5;
+                    }
+                }
             }
         }
 
@@ -3303,3 +3313,25 @@ footer,
 }
 
 /*=================log_in_section_PAGE_END=================*/
+
+
+/*=================brackets_PAGE_END=================*/
+.brackets {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+
+
+    .brackets_locked {
+        padding: 16px 16px;
+        background-color: #fff;
+        border: 1px solid rgb(217, 219, 222);
+        border-radius: 10px;
+
+        @include minwidth(768px) {
+            padding: 24px 24px;
+        }
+    }
+}
+
+/*=================brackets_PAGE_END=================*/

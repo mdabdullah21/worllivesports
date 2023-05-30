@@ -1034,6 +1034,16 @@ h6,
   width: 60px !important;
   border-top: 1px solid;
 }
+.newes_cart_section .newes_cart_section-inner .scrollbox .newes_cart_inner .more_text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #202121;
+  transition: color 0.2s ease;
+}
+.newes_cart_section .newes_cart_section-inner .scrollbox .newes_cart_inner .more_text:hover {
+  color: #0036b5;
+}
+
 /* newsletter_section*/
 .newsletter {
   max-width: 100%;
@@ -2800,4 +2810,23 @@ footer .site_footer_copyright p,
   color: red;
 }
 
-/*=================log_in_section_PAGE_END=================*//*# sourceMappingURL=style.css.map */
+/*=================log_in_section_PAGE_END=================*/
+/*=================brackets_PAGE_END=================*/
+.brackets {
+  width: 1440px;
+  max-width: 100%;
+  margin: auto;
+}
+.brackets .brackets_locked {
+  padding: 16px 16px;
+  background-color: #fff;
+  border: 1px solid rgb(217, 219, 222);
+  border-radius: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .brackets .brackets_locked {
+    padding: 24px 24px;
+  }
+}
+
+/*=================brackets_PAGE_END=================*//*# sourceMappingURL=style.css.map */
