@@ -296,7 +296,6 @@ h6,
   z-index: 9999;
 }
 
-header,
 .header {
   position: sticky !important;
   top: 1;
@@ -2795,7 +2794,7 @@ footer .site_footer_copyright p,
   text-align: center;
   margin: auto;
   color: #6e8dcf;
-  font-size: 15px;
+  font-size: 1543px;
 }
 .log_in_section .log_in_section_inner .signup:hover {
   color: red;
