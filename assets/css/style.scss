@@ -3320,18 +3320,394 @@ footer,
     width: 1440px;
     max-width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 
-
-    .brackets_locked {
+    .bracket_basic {
         padding: 16px 16px;
         background-color: #fff;
         border: 1px solid rgb(217, 219, 222);
         border-radius: 10px;
+        margin-bottom: 20px;
 
         @include minwidth(768px) {
             padding: 24px 24px;
+            margin-bottom: 30px;
         }
     }
+
+
+    .brackets_left {
+        width: 1108px;
+        max-width: 100%;
+        margin-right: 5px;
+
+        .brackets_locked {
+            // padding: 16px 16px;
+            // background-color: #fff;
+            // border: 1px solid rgb(217, 219, 222);
+            // border-radius: 10px;
+
+            // @include minwidth(768px) {
+            //     padding: 24px 24px;
+            // }
+
+            .lock_icon {
+                margin-right: 15px;
+            }
+
+            .lock_description {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(101, 102, 103);
+            }
+        }
+
+        .my_poools {
+
+            h4,
+            .h4 {
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .login_icon {
+                margin-right: 15px;
+                font-size: 16px;
+            }
+
+            .mypools_level {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(101, 102, 103);
+            }
+
+            .log_in {
+                font-size: 12px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 73, 206);
+                padding: 10px 16px;
+                border-radius: 3px;
+                margin-left: auto;
+                text-align: end;
+            }
+        }
+
+        .latest_ncaa {
+
+            h4,
+            .h4 {
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .latest_ncaa_article {
+                display: flex;
+                -moz-box-align: center;
+                align-items: center;
+                margin-top: 1.5rem;
+
+                .latest_ncaa_article_img {
+                    width: 215px;
+                    border-radius: 10px;
+                }
+
+                .latest_ncaa_article_info {
+                    margin-left: 1rem;
+
+                    .title {
+                        display: inline-flex;
+                        margin-bottom: 0.25rem;
+                        line-height: 1.5rem;
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                        color: rgb(32, 33, 33);
+                        letter-spacing: -0.25px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        -moz-box-orient: vertical;
+
+                        &:hover {
+                            color: rgb(0, 73, 206);
+                        }
+                    }
+
+                    .discriptions {
+                        color: rgb(101, 102, 103);
+                        font-size: 0.875rem;
+                        line-height: 1.25rem;
+                        margin-bottom: 0.5rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -moz-box-orient: vertical;
+                    }
+
+                    .ext_info {
+                        display: flex;
+                        -moz-box-align: center;
+                        align-items: center;
+                        color: rgb(101, 102, 103);
+                        font-family: "FS Industrie Nw", "FS Industrie", Helvetica, Arial, sans-serif;
+                        font-weight: 500;
+                        font-size: 0.75rem;
+                        line-height: 1.25rem;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+
+                        .logo {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            flex-shrink: 0;
+                            margin-right: 0.5rem;
+                        }
+
+                        .red_time {
+                            font-size: 11px;
+                            font-weight: 500;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                            color: rgb(101, 102, 103);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brackets_right {
+        width: 300px;
+        // max-width: 100%;
+
+        .sports_line {
+            .sportsline_content {
+                .content {
+                    display: flex;
+                    align-items: center;
+
+                    .content_text {
+                        width: 190px;
+                        max-width: 100%;
+                        font-size: 14px;
+
+                    }
+
+                    .content_img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 5px;
+                        @include background_img();
+                    }
+                }
+
+                .more_link {
+                    a {
+                        font-size: 14px;
+                        display: flex;
+                        -moz-box-pack: center;
+                        justify-content: center;
+                        -moz-box-align: center;
+                        align-items: center;
+                        margin-top: 16px;
+                        color: rgb(0, 108, 191);
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .whentowatch {
+            width: 100%;
+
+            h4,
+            .h4 {
+                margin: 0;
+                font-weight: 700;
+                padding: 16px 10px;
+                text-transform: uppercase;
+
+                @include minwidth(768px) {
+                    padding: 20px 24px;
+                }
+            }
+
+            .watch_table {
+                font-size: 12px;
+                font-weight: 500;
+                color: #656667;
+
+                .watch_table_header {
+                    padding: 5px 24px;
+                }
+
+                .watch_row {
+                    width: 100%;
+                    border-top: 1px solid rgb(217, 219, 222);
+                    padding: 12px 16px !important;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1rem;
+                    letter-spacing: -0.1px;
+                    color: rgb(33, 32, 33);
+                    // padding: 5px 24px;
+                }
+            }
+        }
+    }
+
+
 }
 
 /*=================brackets_PAGE_END=================*/
+
+
+/*=================BASEBALL_PAGE_START=================*/
+.fantacy_big_bennar {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    // padding: 240px 0px;
+    padding: 50px 0px;
+
+
+    @include minwidth(586px) {
+        height: 600px;
+        padding: 65px 0px;
+    }
+
+    @include minwidth(768px) {
+        height: 700px;
+        padding: 80px 0px;
+    }
+
+    @include minwidth(992px) {
+        height: 800px;
+        padding: 100px 0px;
+    }
+
+    @include minwidth(1200px) {
+        height: 900px;
+        padding: 140px 0px;
+    }
+
+    @include minwidth(1400px) {
+        // height: 900px;
+        padding: 170px 0px;
+    }
+
+    @include minwidth(1600px) {
+        // height: 900px;
+        padding: 180px 0px;
+    }
+
+    @include minwidth(1800px) {
+        // height: 900px;
+        padding: 240px 0px;
+    }
+
+    .fantacy_big_bennar_inner {
+        width: 1230px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        .marquee-sports-wrap {
+            width: 530px;
+            max-width: 100%;
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-radius: 2px;
+            display: flex;
+            margin: 0px auto;
+            overflow: hidden;
+
+            .marquee-sport {
+                // width: 105px;
+                // height: 105px;
+                text-align: center;
+                border: 1px solid rgba(255, 255, 255, .3);
+                color: #fff;
+
+                .marquee-sport-inner {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding: 15px;
+                    transition: opacity .2s;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 15px 15px;
+
+
+                    .icon {
+                        font-size: 26px;
+                        color: #fff;
+                        margin-bottom: 8px;
+                    }
+
+                    .marquee-sport-title {
+                        width: 75px;
+                        font-size: 10px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .bennar_text {
+            margin: auto;
+
+            .marquee_super_title {
+                text-align: center;
+                font-weight: 400;
+                line-height: 1;
+                color: #fff;
+                font-size: 12px !important;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-size: 0.875rem;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            h1,
+            .marquee-title {
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1;
+                color: #fff;
+                margin: 0 30px 10px;
+                text-align: center;
+
+                @include minwidth(1400px) {
+                    font-size: 58px;
+                }
+
+            }
+
+            .marquee-desc {
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                text-transform: none;
+                margin-bottom: 30px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+    }
+
+}
+
+/*=================BASEBALL_PAGE_END=================*/
