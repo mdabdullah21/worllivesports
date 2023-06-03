@@ -272,6 +272,9 @@ h6,
     padding: 20px;
     overflow-x: hidden;
     overflow-y: scroll;
+    box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
 
     @include minwidth(992px) {
         margin-left: -250px;
@@ -302,7 +305,7 @@ h6,
     text-align: left !important;
     font-size: 16px;
     position: relative;
-    z-index: 9999;
+    z-index: 999999 !important;
 
     ul {
         position: absolute;
@@ -331,6 +334,15 @@ h6,
             padding: 0;
             text-decoration: none;
             font-size: 16px;
+
+            @include minwidth(992px) {
+                font-size: 14px;
+            }
+
+            @include minwidth(1350px) {
+                font-size: 16px;
+            }
+
         }
 
         li {
@@ -414,7 +426,7 @@ h6,
         text-align: left;
         font-size: 16px;
         position: relative;
-        z-index: 99;
+        z-index: 1;
 
         ul {
             position: absolute;
@@ -444,6 +456,14 @@ h6,
                 font-size: 16px;
                 text-decoration: underline transparent;
 
+                @include minwidth(992px) {
+                    font-size: 14px;
+                }
+
+                @include minwidth(1350px) {
+                    font-size: 16px;
+                }
+
                 &.hover {
                     color: #0036b5;
                     text-decoration: underline #0036b5 !important;
@@ -457,14 +477,14 @@ h6,
                     display: block;
                     margin-left: 155px;
                     margin-top: -32px;
-                    z-index: 99999;
+                    // z-index: 99999;
                 }
 
                 &:hover .ul-left {
                     display: block;
                     margin-right: 155px;
                     margin-top: -32px;
-                    z-index: 99999;
+                    // z-index: 99999;
                 }
 
                 a {
@@ -484,7 +504,7 @@ h6,
 
     .sub-menu {
         width: 300px;
-        z-index: 99999;
+        // z-index: 99999 !important;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -492,10 +512,13 @@ h6,
         margin-right: 0;
         margin-top: 3px;
         position: relative;
-        padding: 10px 0px;
+        padding: 10px 6px;
+        box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+        -webkit-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+        -moz-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
 
         @include minwidth(520px) {
-            width: 400px;
+            width: 500px;
         }
 
         li {
@@ -695,7 +718,7 @@ h6,
 
     .nav_dropdown_button {
         background-color: #05a342;
-        padding: 10px 0px;
+        padding: 10px 10px;
 
         a {
             color: #fff;
@@ -1867,8 +1890,8 @@ footer,
 
 .ext_menu {
     font-size: 24px;
-    width: 35px;
-    max-width: 100%;
+    display: flex;
+    align-items: baseline;
 
     i {
         font-size: 24px;
@@ -2037,17 +2060,28 @@ footer,
 
     .fantacy_inner {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
 
         @include minwidth(554px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
         @include minwidth(992px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            // align-items: start;
+            // flex-wrap: wrap;
+        }
+
+        @include minwidth(1150px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             // align-items: start;
             // flex-wrap: wrap;
         }
@@ -2429,6 +2463,9 @@ footer,
             border-top: 2px solid #004ace;
             margin-bottom: 20px;
             // margin: auto;
+            margin-top: 0 !important;
+            margin-left: auto;
+            margin-right: auto;
 
             @include minwidth(554px) {
                 // display: block;
@@ -2538,33 +2575,33 @@ footer,
 }
 
 /*=================NFL_PAGE_START=================*/
-.ext_menu {
-    font-size: 24px;
-    width: 35px;
-    max-width: 100%;
+// .ext_menu {
+//     font-size: 24px;
+//     // width: 35px;
+//     // max-width: 100%;
 
-    i {
-        font-size: 24px;
-    }
-
-
-    .scrollbar {
-        overflow-y: hidden;
-        overflow-x: scroll;
-        width: 300px;
-
-        @include minwidth(520px) {
-            width: 500px;
-        }
+//     i {
+//         font-size: 24px;
+//     }
 
 
-        .sub_menu_inner {
-            width: 1050px;
-        }
-    }
+//     .scrollbar {
+//         overflow-y: hidden;
+//         overflow-x: scroll;
+//         width: 300px;
+
+//         @include minwidth(520px) {
+//             width: 500px;
+//         }
 
 
-}
+//         .sub_menu_inner {
+//             width: 1050px;
+//         }
+//     }
+
+
+// }
 
 .tournament-latest-news {
     background-color: #fff;
@@ -3227,7 +3264,7 @@ footer,
 .log_in_section {
     width: 100%;
     background-color: #fff;
-    padding: 30px 0px;
+    padding: 30px 5px;
 
     @include minwidth(586px) {
         padding: 40px 0px
@@ -3303,7 +3340,7 @@ footer,
             text-align: center;
             margin: auto;
             color: #6e8dcf;
-            font-size: 1543px;
+            font-size: 15px;
 
             &:hover {
                 color: red;

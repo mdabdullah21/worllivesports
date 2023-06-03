@@ -230,6 +230,9 @@ h6,
   padding: 20px;
   overflow-x: hidden;
   overflow-y: scroll;
+  box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
 }
 @media only screen and (min-width: 992px) {
   .sub-menu_left {
@@ -258,7 +261,7 @@ h6,
   text-align: left !important;
   font-size: 16px;
   position: relative;
-  z-index: 9999;
+  z-index: 999999 !important;
 }
 #nav ul {
   position: absolute;
@@ -284,6 +287,16 @@ h6,
   padding: 0;
   text-decoration: none;
   font-size: 16px;
+}
+@media only screen and (min-width: 992px) {
+  #nav li a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  #nav li a {
+    font-size: 16px;
+  }
 }
 #nav li li {
   width: 100%;
@@ -355,7 +368,7 @@ h6,
   text-align: left;
   font-size: 16px;
   position: relative;
-  z-index: 99;
+  z-index: 1;
 }
 .menu #nav ul {
   position: absolute;
@@ -383,6 +396,16 @@ h6,
   -webkit-text-decoration: underline transparent;
           text-decoration: underline transparent;
 }
+@media only screen and (min-width: 992px) {
+  .menu #nav li a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .menu #nav li a {
+    font-size: 16px;
+  }
+}
 .menu #nav li a.hover {
   color: #0036b5;
   -webkit-text-decoration: underline #0036b5 !important;
@@ -395,13 +418,11 @@ h6,
   display: block;
   margin-left: 155px;
   margin-top: -32px;
-  z-index: 99999;
 }
 .menu #nav li li:hover .ul-left {
   display: block;
   margin-right: 155px;
   margin-top: -32px;
-  z-index: 99999;
 }
 .menu #nav li li a {
   display: block;
@@ -417,7 +438,6 @@ h6,
 }
 .menu .sub-menu {
   width: 300px;
-  z-index: 99999;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -425,11 +445,14 @@ h6,
   margin-right: 0;
   margin-top: 3px;
   position: relative;
-  padding: 10px 0px;
+  padding: 10px 6px;
+  box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 1px 16px 66px 3px rgba(0, 0, 0, 0.56);
 }
 @media only screen and (min-width: 520px) {
   .menu .sub-menu {
-    width: 400px;
+    width: 500px;
   }
 }
 .menu .sub-menu li {
@@ -602,7 +625,7 @@ h6,
 }
 .menu .nav_dropdown_button {
   background-color: #05a342;
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 .menu .nav_dropdown_button a {
   color: #fff;
@@ -1590,8 +1613,8 @@ footer .site_footer_copyright p,
 /*=================FANTACY_PAGE_STARAT=================*/
 .ext_menu {
   font-size: 24px;
-  width: 35px;
-  max-width: 100%;
+  display: flex;
+  align-items: baseline;
 }
 .ext_menu i {
   font-size: 24px;
@@ -1738,18 +1761,28 @@ footer .site_footer_copyright p,
 }
 .fantacy .fantacy_inner {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 554px) {
   .fantacy .fantacy_inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 992px) {
   .fantacy .fantacy_inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .fantacy .fantacy_inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .fantacy .fantacy_inner .fantacy_inner_wrap {
@@ -2064,6 +2097,9 @@ footer .site_footer_copyright p,
   border-bottom: 1px solid #d9dbde;
   border-top: 2px solid #004ace;
   margin-bottom: 20px;
+  margin-top: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fantacy .fantacy_inner .fantacy_content_right h5,
 .fantacy .fantacy_inner .fantacy_content_right .h5 {
@@ -2153,28 +2189,6 @@ footer .site_footer_copyright p,
 }
 
 /*=================NFL_PAGE_START=================*/
-.ext_menu {
-  font-size: 24px;
-  width: 35px;
-  max-width: 100%;
-}
-.ext_menu i {
-  font-size: 24px;
-}
-.ext_menu .scrollbar {
-  overflow-y: hidden;
-  overflow-x: scroll;
-  width: 300px;
-}
-@media only screen and (min-width: 520px) {
-  .ext_menu .scrollbar {
-    width: 500px;
-  }
-}
-.ext_menu .scrollbar .sub_menu_inner {
-  width: 1050px;
-}
-
 .tournament-latest-news {
   background-color: #fff;
   padding: 15px 10px;
@@ -2731,7 +2745,7 @@ footer .site_footer_copyright p,
 .log_in_section {
   width: 100%;
   background-color: #fff;
-  padding: 30px 0px;
+  padding: 30px 5px;
 }
 @media only screen and (min-width: 586px) {
   .log_in_section {
@@ -2804,7 +2818,7 @@ footer .site_footer_copyright p,
   text-align: center;
   margin: auto;
   color: #6e8dcf;
-  font-size: 1543px;
+  font-size: 15px;
 }
 .log_in_section .log_in_section_inner .signup:hover {
   color: red;
