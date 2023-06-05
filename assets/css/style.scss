@@ -2473,6 +2473,10 @@ footer,
                 // margin-left: auto;
             }
 
+            .accordion-body {
+                font-size: 12px;
+            }
+
             h5,
             .h5 {
                 padding-left: 10px;
@@ -2499,7 +2503,7 @@ footer,
             .scrollbox_y {
                 overflow-y: scroll;
                 overflow-x: hidden;
-                height: 300px;
+                height: 500px;
 
                 .filter-item {
                     width: 100%;
@@ -3748,3 +3752,134 @@ footer,
 }
 
 /*=================BASEBALL_PAGE_END=================*/
+
+
+/*=================FANTACY_SUB_PAGE_START=================*/
+.fantacy_bennar_secondery {
+    width: 1920px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+
+    .fantacy_bennar_sec_left {
+        @include background_img();
+        width: 280px;
+        max-width: 100%;
+        padding: 45px 0px;
+        display: table;
+        table-layout: fixed;
+
+        @include minwidth(768px) {
+            padding: 100px 0px;
+        }
+
+        .page-marquee-content {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 16px;
+            color: #fff;
+            text-align: center;
+
+            .marquee-title {
+                font-weight: 900;
+                line-height: 1;
+                font-size: 26px;
+                color: #fff;
+                margin: 0 auto 20px;
+            }
+
+            .marquee-buttons-wrap {
+                margin-bottom: 25px;
+                margin: auto;
+
+                .marquee-button {
+                    font-weight: 500;
+                    line-height: 1;
+                    border: 0;
+                    border-radius: 2px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    display: block;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: background-color .2s ease;
+                    width: 100%;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    padding: 18px 27px;
+                    background-color: #05a342;
+                    color: #fff;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        background-color: #04802d;
+                    }
+                }
+            }
+
+            .marquee-promo {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 1.2;
+                text-transform: none;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: rgba(40, 40, 169, 0.754);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .fantacy_bennar_sec_main {
+        width: 1395px;
+        max-width: 100%;
+
+        // .title_article {
+        //     width: 100%;
+        //     margin-top: auto;
+        //     color: #fff;
+        //     padding: 10px;
+        //     position: absolute;
+        //     bottom: 0px;
+        //     background: rgb(2, 0, 36);
+        //     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 13, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        //     transition: 0.5s ease;
+
+        //     &:hover .pga_bener_dek {
+        //         display: block;
+        //         // color: red;
+        //         // transition-timing-function: 3s ease-in-out;
+        //         transition: 3s ease;
+        //     }
+
+        //     .pga_bener_title {
+        //         margin-top: auto;
+        //         // line-height: 35px;
+        //         margin-bottom: 0px;
+        //     }
+
+        //     .pga_bener_dek {
+        //         display: none;
+        //         transition: opacity .5s ease-out, margin-top .5s ease-out, max-height .5s ease-out;
+        //     }
+        // }
+
+    }
+
+    .fantacy_bennar_sec_right {
+        width: 245px;
+        max-width: 100%;
+        background-color: #050d27;
+        padding: 10px;
+    }
+}
+
+/*=================FANTACY_SUB_PAGE_END=================*/

@@ -2101,6 +2101,9 @@ footer .site_footer_copyright p,
   margin-left: auto;
   margin-right: auto;
 }
+.fantacy .fantacy_inner .fantacy_content_right .accordion-body {
+  font-size: 12px;
+}
 .fantacy .fantacy_inner .fantacy_content_right h5,
 .fantacy .fantacy_inner .fantacy_content_right .h5 {
   padding-left: 10px;
@@ -2124,7 +2127,7 @@ footer .site_footer_copyright p,
 .fantacy .fantacy_inner .fantacy_content_right .scrollbox_y {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 300px;
+  height: 500px;
 }
 .fantacy .fantacy_inner .fantacy_content_right .scrollbox_y .filter-item {
   width: 100%;
@@ -3148,4 +3151,92 @@ footer .site_footer_copyright p,
   text-align: center;
 }
 
-/*=================BASEBALL_PAGE_END=================*//*# sourceMappingURL=style.css.map */
+/*=================BASEBALL_PAGE_END=================*/
+/*=================FANTACY_SUB_PAGE_START=================*/
+.fantacy_bennar_secondery {
+  width: 1920px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 280px;
+  max-width: 100%;
+  padding: 45px 0px;
+  display: table;
+  table-layout: fixed;
+}
+@media only screen and (min-width: 768px) {
+  .fantacy_bennar_secondery .fantacy_bennar_sec_left {
+    padding: 100px 0px;
+  }
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-title {
+  font-weight: 900;
+  line-height: 1;
+  font-size: 26px;
+  color: #fff;
+  margin: 0 auto 20px;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-buttons-wrap {
+  margin-bottom: 25px;
+  margin: auto;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-buttons-wrap .marquee-button {
+  font-weight: 500;
+  line-height: 1;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 18px 27px;
+  background-color: #05a342;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-buttons-wrap .marquee-button:hover {
+  background-color: #04802d;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-promo {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: none;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-promo a {
+  color: #fff;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_left .page-marquee-content .marquee-promo a:hover {
+  color: rgba(40, 40, 169, 0.754);
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_main {
+  width: 1395px;
+  max-width: 100%;
+}
+.fantacy_bennar_secondery .fantacy_bennar_sec_right {
+  width: 245px;
+  max-width: 100%;
+  background-color: #050d27;
+  padding: 10px;
+}
+
+/*=================FANTACY_SUB_PAGE_END=================*//*# sourceMappingURL=style.css.map */
