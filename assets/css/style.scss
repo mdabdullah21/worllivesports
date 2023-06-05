@@ -2365,7 +2365,9 @@ footer,
 
                     .most_view_player {
                         .most_view_player_inner {
-                            .filter-menu {
+
+                            .filter-menu,
+                            .filteritem_ext {
                                 background-color: #f5f6f7;
                                 border-top: none;
                                 display: flex;
@@ -2379,7 +2381,12 @@ footer,
                                     @include minwidth(520px) {
                                         padding: 10px 30px;
                                     }
+                                }
+                            }
 
+                            .filteritem_ext {
+                                li {
+                                    padding: 10px 11px !important;
                                 }
                             }
 
@@ -3881,5 +3888,12 @@ footer,
         padding: 10px;
     }
 }
+
+
+/*===small_padding===*/
+.filteritem_ext li {
+    padding: 10px 11px !important;
+}
+
 
 /*=================FANTACY_SUB_PAGE_END=================*/

@@ -2026,21 +2026,27 @@ footer .site_footer_copyright p,
   color: #757678;
   display: block;
 }
-.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filter-menu {
+.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filter-menu,
+.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filteritem_ext {
   background-color: #f5f6f7;
   border-top: none;
   display: flex;
   justify-content: space-between;
 }
-.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filter-menu li {
+.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filter-menu li,
+.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filteritem_ext li {
   padding: 10px 15px;
   font-size: 12px;
   font-weight: 700;
 }
 @media only screen and (min-width: 520px) {
-  .fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filter-menu li {
+  .fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filter-menu li,
+  .fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filteritem_ext li {
     padding: 10px 30px;
   }
+}
+.fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .filteritem_ext li {
+  padding: 10px 11px !important;
 }
 .fantacy .fantacy_inner .fantacy_inner_wrap .fantacy_content_main .fantacy_content_main-body .most_view_player .most_view_player_inner .scrollbox_y {
   overflow-y: scroll;
@@ -3237,6 +3243,11 @@ footer .site_footer_copyright p,
   max-width: 100%;
   background-color: #050d27;
   padding: 10px;
+}
+
+/*===small_padding===*/
+.filteritem_ext li {
+  padding: 10px 11px !important;
 }
 
 /*=================FANTACY_SUB_PAGE_END=================*//*# sourceMappingURL=style.css.map */
