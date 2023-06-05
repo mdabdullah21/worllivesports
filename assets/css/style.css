@@ -3250,4 +3250,35 @@ footer .site_footer_copyright p,
   padding: 10px 11px !important;
 }
 
+.FantasyPartner {
+  margin: auto;
+  text-align: center;
+}
+.FantasyPartner .FantasyPartner-desc {
+  transition: color 0.2s ease;
+}
+.FantasyPartner .FantasyPartner-desc a {
+  color: #202121;
+  font-size: 16px;
+  font-weight: 700;
+}
+.FantasyPartner .FantasyPartner-desc a:hover {
+  color: #0036b5;
+}
+.FantasyPartner .FantasyPartner-listItem {
+  font-size: 0.875rem;
+  border-bottom: 0;
+  border-right: 1px solid rgba(32, 33, 33, 0.2);
+  color: #757678;
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.letast_news_marque .letast_news_marque_img {
+  position: relative;
+}
+.letast_news_marque .image_title {
+  position: absolute;
+}
+
 /*=================FANTACY_SUB_PAGE_END=================*//*# sourceMappingURL=style.css.map */
