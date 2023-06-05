@@ -3279,6 +3279,8 @@ footer .site_footer_copyright p,
 }
 .letast_news_marque .image_title {
   position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 /*=================FANTACY_SUB_PAGE_END=================*//*# sourceMappingURL=style.css.map */
