@@ -2109,6 +2109,7 @@ footer,
             .fantacy_content_left {
                 // width: 155px;
                 // max-width: 100%;
+                margin: auto;
 
 
                 @include minwidth(554px) {
@@ -2131,12 +2132,14 @@ footer,
                     border-top: 2px solid #004ace;
                     box-sizing: border-box;
                     margin-bottom: 32px;
-                    margin-left: 8px;
-                    margin-right: 8px;
+                    margin-left: auto;
+                    margin-right: auto;
 
                     // display: flex;
                     @include minwidth(554px) {
                         width: 155px;
+                        margin-left: 8px;
+                        margin-right: 8px;
                     }
 
                     section,
@@ -2193,6 +2196,8 @@ footer,
                     border-top: 2px solid #004ace;
                     box-sizing: border-box;
                     margin-bottom: 32px;
+                    margin-left: auto;
+                    margin-right: auto;
 
                     // padding: 25px 10px;
                     @include minwidth(554px) {
@@ -3778,9 +3783,14 @@ footer,
         padding: 45px 0px;
         display: table;
         table-layout: fixed;
+        order: 2;
 
         @include minwidth(768px) {
             padding: 100px 0px;
+        }
+
+        @include minwidth(1920px) {
+            order: 1;
         }
 
         .page-marquee-content {
@@ -3848,37 +3858,11 @@ footer,
     .fantacy_bennar_sec_main {
         width: 1395px;
         max-width: 100%;
+        order: 1;
 
-        // .title_article {
-        //     width: 100%;
-        //     margin-top: auto;
-        //     color: #fff;
-        //     padding: 10px;
-        //     position: absolute;
-        //     bottom: 0px;
-        //     background: rgb(2, 0, 36);
-        //     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 13, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        //     transition: 0.5s ease;
-
-        //     &:hover .pga_bener_dek {
-        //         display: block;
-        //         // color: red;
-        //         // transition-timing-function: 3s ease-in-out;
-        //         transition: 3s ease;
-        //     }
-
-        //     .pga_bener_title {
-        //         margin-top: auto;
-        //         // line-height: 35px;
-        //         margin-bottom: 0px;
-        //     }
-
-        //     .pga_bener_dek {
-        //         display: none;
-        //         transition: opacity .5s ease-out, margin-top .5s ease-out, max-height .5s ease-out;
-        //     }
-        // }
-
+        @include minwidth(1920px) {
+            order: 2;
+        }
     }
 
     .fantacy_bennar_sec_right {
@@ -3886,6 +3870,11 @@ footer,
         max-width: 100%;
         background-color: #050d27;
         padding: 10px;
+        order: 2;
+
+        @include minwidth(1920px) {
+            order: 3;
+        }
     }
 }
 
@@ -3927,16 +3916,26 @@ footer,
 }
 
 .letast_news_marque {
-
+    position: relative;
 
     .letast_news_marque_img {
-        position: relative;
+        width: 100%;
     }
 
     .image_title {
         position: absolute;
-        top: 0;
         bottom: 0;
+        color: #fff;
+        padding: 0px 30px;
+        opacity: 1;
+
+        &:hover {
+            background-color: #00000047;
+            box-shadow: -4px 3px 62px -1px rgba(0, 0, 0, 0.63);
+            -webkit-box-shadow: -4px 3px 62px -1px rgba(0, 0, 0, 0.63);
+            -moz-box-shadow: -4px 3px 62px -1px rgba(0, 0, 0, 0.63);
+            transition: opacity .5s ease-in .5s;
+        }
     }
 
 }
