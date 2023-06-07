@@ -4187,6 +4187,10 @@ footer,
         /*==================================*/
         .LatestNewsBox {
             background-color: #fff;
+            border: 1px solid #d9dbde;
+            margin-bottom: 16px;
+            overflow: hidden;
+            padding: 16px;
 
             .Card-title {
                 font-weight: 500;
@@ -4197,6 +4201,28 @@ footer,
                 padding: 16px 10px;
                 position: relative;
                 border-bottom: 1px solid #d9dbde;
+            }
+
+            .LatestNewsBox-content {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .LatestNewsBox-item {
+                    display: flex;
+                    // align-items: center;
+
+                    .LatestNewsBox-image,
+                    .LatestNewsBox-imageImage {
+                        border-radius: 3px;
+                        margin-bottom: 0;
+                        margin-right: 5px;
+                    }
+
+                    .LatestNewsBox-itemTitle {
+                        margin-top: 1px;
+                    }
+                }
             }
         }
 
