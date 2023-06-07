@@ -3942,3 +3942,271 @@ footer,
 
 
 /*=================FANTACY_SUB_PAGE_END=================*/
+
+
+
+/*=================SCORES_PAGE_START=================*/
+.PageTitle-content {
+    background-color: #fff;
+
+    .PageTitle-content_inner {
+        width: 1441px;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+.Page-content {
+    width: 1441px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .Page-content-left {
+        width: 950px;
+        max-width: 100%;
+
+        .PageSubNav {
+            margin-top: 32px;
+            margin-bottom: 32px;
+
+            .ScoreboardNav {
+                display: flex;
+                justify-content: space-between;
+
+                .ScoreboardNav-main {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .ToggleContainer {
+                        display: flex;
+
+                        .dropdown-item {
+                            font-size: 12px !important;
+                        }
+
+                        .ToggleContainer-button {
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                            background-color: #fff;
+                            border: 1px solid #d9dbde;
+                            // border-right-color: rgb(217, 219, 222);
+                            // border-right-style: solid;
+                            // border-right-width: 1px;
+                            // border-right: none;
+                            color: #656667;
+                            cursor: pointer;
+                            letter-spacing: normal;
+                            text-transform: none;
+                            padding: 5px 20px;
+
+                            &:hover {
+                                border: 1px solid #004ace;
+                                color: #202121;
+                            }
+
+                            .active {
+                                border: 1px solid #004ace !important;
+                                color: #202121 !important;
+                            }
+
+                            .ToggleContainer-text {
+                                color: #656667;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .scrollbox-x {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            margin-bottom: 8px;
+
+            @include minwidth(950px) {
+                overflow: unset;
+            }
+
+            .Page-content-left_inner {
+                display: flex;
+                justify-content: space-between;
+                width: 949px;
+
+                .single-score-card {
+                    width: 310px;
+                    background-color: #fff;
+                    border: 1px solid #d9dbde;
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, .2);
+                    justify-content: space-between;
+                    transition: box-shadow .5s ease;
+
+                    &:hover {
+                        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2);
+                        z-index: 1;
+                    }
+
+
+                    .top-bar {
+                        width: 100%;
+                        font-size: 12px;
+                        color: #656667;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        padding: 12px 16px 12px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .in-progress-table {
+                        padding: 16px;
+                        padding-bottom: 12px;
+                        padding-top: 0;
+                        display: block;
+                        width: 100%;
+
+                        .in-progress-table_inner {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            a {
+                                color: #202121;
+                            }
+
+                            .team-details-wrapper {
+                                width: 70%;
+                                padding-right: 8px;
+                                color: #202121;
+                                letter-spacing: .5px;
+                                display: flex;
+                                align-items: center;
+
+                                .logo {
+                                    height: 24px;
+                                    width: 24px;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-right: 10px;
+                                }
+
+                                .team-name-link {
+                                    // display: inline;
+                                }
+                            }
+
+                            .in-progress-odds {
+                                width: 30%;
+                                font-size: 12px;
+                                color: #656667;
+                                margin-left: auto;
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    .series-statement {
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        color: #757678;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        padding: 0px 16px;
+                        margin-bottom: 10px;
+
+                        .all-access-link {
+                            color: #202121;
+                            text-decoration: none;
+                            transition: color .2s ease;
+
+
+                            &:hover {
+                                color: #0036b5;
+                            }
+                        }
+
+                    }
+
+
+                    .all-access {
+                        background: url("//sportsfly.cbsistatic.com/fly-0482/bundles/sportsmediacss/images/scores/stream-on-paramount.svg") no-repeat center center;
+                        background-color: rgba(0, 0, 0, 0);
+                        background-color: #0064ff;
+                        box-sizing: border-box;
+                        color: #fff;
+                        overflow: hidden;
+                    }
+
+
+                    .all-access,
+                    .scoreboard {
+                        display: inline-block;
+                        padding: 16px 0;
+                        position: relative;
+                        width: 100%;
+                    }
+
+                    .bottom-bar {
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        letter-spacing: 0em;
+                        align-items: center;
+                        box-sizing: border-box;
+                        color: #656667;
+                        display: flex;
+                        justify-content: space-evenly;
+                        min-height: 40px;
+                        border-top: 1px solid #d9dbde;
+                        list-style: none;
+
+                        .bottom-bar-sportsline {
+                            line-height: 1.2;
+                            list-style: none;
+                            text-align: center;
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                            letter-spacing: 0em;
+                            color: #656667;
+
+                            .logo {
+                                width: 10px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        /*==================================*/
+        .LatestNewsBox {
+            background-color: #fff;
+
+            .Card-title {
+                font-weight: 500;
+                line-height: 1.2;
+                color: #656667;
+                display: block;
+                font-size: 16px;
+                padding: 16px 10px;
+                position: relative;
+                border-bottom: 1px solid #d9dbde;
+            }
+        }
+
+    }
+
+    .Page-content-right {
+        width: 460px;
+        max-width: 100%;
+    }
+
+}
+
+/*=================SCORES_PAGE_END=================*/
