@@ -3555,6 +3555,150 @@ footer .site_footer_copyright p,
 .Page-content .Page-content-right {
   width: 460px;
   max-width: 100%;
+  /*playlist_video_script*/
+}
+.Page-content .Page-content-right .embed__conttainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.Page-content .Page-content-right .embed__container {
+  position: relative;
+  padding-bottom: 56%;
+  width: 100%;
+  text-align: left;
+  background-color: #000000;
+}
+.Page-content .Page-content-right .embed__container iframe {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+.Page-content .Page-content-right #player {
+  width: 100%;
+}
+.Page-content .Page-content-right .owl-nav > div {
+  margin-top: -20px;
+  position: absolute;
+  top: 45%;
+  color: #d8d8d8;
+  padding: 0px;
+  width: 46px;
+  display: initial;
+  height: 46px;
+  border-radius: 50px;
+  background: rgba(6, 6, 6, 0.6588235294);
+}
+.Page-content .Page-content-right .owl-nav > div:hover {
+  color: #ffffff;
+  background: #000000;
+}
+.Page-content .Page-content-right .owl-nav > div.disabled {
+  color: rgba(255, 255, 255, 0);
+  background: rgba(99, 99, 99, 0);
+}
+.Page-content .Page-content-right .owl-nav > div.disabled {
+  color: rgba(255, 255, 255, 0);
+  background: rgba(99, 99, 99, 0);
+}
+.Page-content .Page-content-right .owl-nav i {
+  font-size: 20px;
+  margin: 13px 18px;
+}
+.Page-content .Page-content-right .owl-nav .owl-prev {
+  left: -23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Page-content .Page-content-right .owl-nav .owl-prev i:hover {
+  transition: all 0.3s ease-in-out;
+}
+.Page-content .Page-content-right .owl-nav .owl-next i:hover {
+  transition: all 0.3s ease-in-out;
+}
+.Page-content .Page-content-right .owl-nav .owl-next {
+  right: -23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Page-content .Page-content-right .owl-carousel .owl-item .video-thumb.active:before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  left: 0;
+  top: 0;
+  background: rgba(247, 148, 30, 0.75);
+  z-index: 1;
+  transition: all 250ms ease-out;
+}
+.Page-content .Page-content-right .owl-carousel .owl-item .video-thumb:not(.active):hover:before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  left: 0;
+  top: 0;
+  background: rgba(247, 148, 30, 0.3);
+  z-index: 1;
+  transition: all 1s ease-out;
+}
+.Page-content .Page-content-right .video-thumb:not(.active):hover:before {
+  background: rgba(247, 148, 30, 0.3);
+}
+.Page-content .Page-content-right .video-thumb:after {
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  top: 50%;
+  left: 50%;
+  margin: -0.458em 0 0 -0.5em;
+  color: rgba(255, 255, 255, 0);
+  font-size: 2em;
+  line-height: 1;
+  position: absolute;
+  font-weight: 900;
+  transition: all 250ms ease-out;
+}
+.Page-content .Page-content-right .video-thumb.active:after {
+  color: rgb(255, 255, 255);
+}
+.Page-content .Page-content-right .owl-carousel .owl-item img {
+  position: relative;
+}
+.Page-content .Page-content-right #player .ytp-expand-pause-overlay .ytp-pause-overlay {
+  display: none !important;
+}
+.Page-content .Page-content-right #playerWrap {
+  display: inline-block;
+  position: relative;
+}
+.Page-content .Page-content-right #playerWrap.shown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+  background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
+}
+.Page-content .Page-content-right .loading__text__player {
+  left: 50%;
+  top: 50%;
 }
 
 /*=================SCORES_PAGE_END=================*//*# sourceMappingURL=style.css.map */
