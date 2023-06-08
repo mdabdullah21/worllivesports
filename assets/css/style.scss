@@ -3883,9 +3883,23 @@ footer,
                     .ToggleContainer {
                         display: flex;
 
-                        .dropdown-item {
-                            font-size: 12px !important;
+                        /* dropdown_menu_scroll */
+                        // .scrollbox-y {
+                        //     overflow-x: hidden;
+                        //     overflow-y: scroll;
+                        //     height: 400px;
+                        //     z-index: 112;
+                        // }
+                        .dropdown-menu {
+                            overflow-y: auto;
+                            overflow-x: hidden;
+                            max-height: 300px;
+
+                            .dropdown-item {
+                                font-size: 12px !important;
+                            }
                         }
+
 
                         .ToggleContainer-button {
                             font-size: 0.75rem;
@@ -4409,3 +4423,35 @@ footer,
 }
 
 /*=================NFL_SHEDULE_PAGE_END=================*/
+
+
+/*=================NFL_DRAFT_TRACKER_PAGE_START=================*/
+.draft_tracker_content {
+    .DraftTrackerFiler_menu {
+        border-bottom: 1px solid #d9dbde;
+
+        .filter-menu {
+            margin-bottom: 1px;
+
+            li {
+                display: inline-block;
+                padding: 5px 5px;
+                background: transparent;
+                color: #202121;
+                cursor: pointer;
+                border-bottom: 3px solid transparent;
+                transition: color 0.2s ease;
+                border-top: none;
+                font-size: 12px;
+
+                &:hover {
+                    border-bottom: 3px solid #0036b5;
+                }
+
+            }
+        }
+    }
+}
+
+
+/*=================NFL_DRAFT_TRACKER_PAGE_END=================*/
