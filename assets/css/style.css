@@ -3823,5 +3823,129 @@ footer .site_footer_copyright p,
 .draft_tracker_content .DraftTrackerFiler_menu .filter-menu li:hover {
   border-bottom: 3px solid #0036b5;
 }
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tableth {
+  background-color: #f5f6f7;
+  color: #656667;
+  cursor: default;
+  padding-left: 16px;
+  text-transform: uppercase;
+  font-size: 12px !important;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tableth .draft_tracker-th {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  color: #4b4c4d;
+  margin: 0;
+  padding: 10px;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd {
+  display: flex;
+  justify-content: center;
+  padding: 0px 7px;
+  border: 1px solid #d9dbde;
+  background-color: #fff;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd:hover {
+  background-color: #f5f8ff;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header {
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td {
+  color: #757678;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .img {
+  width: 40px;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .draft_tracker-td_title {
+  font-size: 16px;
+  color: #202121;
+  margin: 0;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .draft_tracker-td_title .draft_tracker-td_titletext {
+  font-size: 16px;
+  font-weight: 500;
+  color: #202121;
+  margin-top: 0;
+  margin-bottom: 5;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .draft_tracker-td_title .draft_tracker-td_playerinfo {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757678;
+  margin: 0;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .draft_tracker-td_videoinfo {
+  color: #757678;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .u-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 5px;
+  color: #202121;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner {
+  padding: 10px 5px;
+  background-color: #f5f6f7;
+}
+@media only screen and (min-width: 768px) {
+  .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner {
+    padding: 10px 15px;
+  }
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .expanded-row-video {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #d9dbde;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .expanded-row-video .expanded-row-video-thumb {
+  width: 150px;
+  height: 85px;
+  border: 1px solid #8e9194;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .expanded-row-video .expanded-row-video-thumb .video_icon {
+  width: 37px;
+  border-radius: 50%;
+  border: 1px solid #8e9194;
+  font-size: 35px;
+  background-color: #fff;
+  padding: 0;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .expanded-row-video .expanded-row-video-title h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .draft_tracker_text {
+  padding: 15px 5px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .draft_tracker_text ul {
+  list-style: circle !important;
+  margin-left: 12px;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .draft_tracker_text strong {
+  margin-top: 5px;
+}
 
 /*=================NFL_DRAFT_TRACKER_PAGE_END=================*//*# sourceMappingURL=style.css.map */
