@@ -100,7 +100,7 @@ body {
   font-family: "Poppins" !important;
   overflow-x: hidden !important;
   background-color: transparent;
-  background-color: #edeef2;
+  background-color: #edeef2 !important;
 }
 
 ul {
@@ -3534,6 +3534,7 @@ footer .site_footer_copyright p,
   padding: 16px 10px;
   position: relative;
   border-bottom: 1px solid #d9dbde;
+  margin-top: 5px;
 }
 .Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content {
   display: flex;
@@ -3542,6 +3543,7 @@ footer .site_footer_copyright p,
 }
 .Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item {
   display: flex;
+  margin-bottom: 15px;
 }
 .Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item .LatestNewsBox-image,
 .Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item .LatestNewsBox-imageImage {
@@ -3550,14 +3552,40 @@ footer .site_footer_copyright p,
   margin-right: 5px;
 }
 .Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item .LatestNewsBox-itemTitle {
+  margin: 0;
+}
+.Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item .LatestNewsBox-itemTitle a {
+  font-size: 18px;
   margin-top: 1px;
+  color: #202121;
+}
+.Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item .LatestNewsBox-itemTitle a:hover {
+  color: #004ace;
+}
+.Page-content .Page-content-left .LatestNewsBox .LatestNewsBox-content .LatestNewsBox-item .LatestNewsBox-itemInfo {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #4b4c4d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
 .Page-content .Page-content-right {
   width: 460px;
   max-width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 1441px) {
+  .Page-content .Page-content-right {
+    margin-top: 80px;
+  }
+}
+.Page-content .Page-content-right .Page-content-right_inner {
+  padding: 10px;
   /*playlist_video_script*/
 }
-.Page-content .Page-content-right .embed__conttainer {
+.Page-content .Page-content-right .Page-content-right_inner .embed__conttainer {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -3565,23 +3593,23 @@ footer .site_footer_copyright p,
   max-width: 100%;
   height: auto;
 }
-.Page-content .Page-content-right .embed__container {
+.Page-content .Page-content-right .Page-content-right_inner .embed__container {
   position: relative;
   padding-bottom: 56%;
   width: 100%;
   text-align: left;
   background-color: #000000;
 }
-.Page-content .Page-content-right .embed__container iframe {
+.Page-content .Page-content-right .Page-content-right_inner .embed__container iframe {
   width: 100%;
   position: absolute;
   height: 100%;
   overflow: hidden;
 }
-.Page-content .Page-content-right #player {
+.Page-content .Page-content-right .Page-content-right_inner #player {
   width: 100%;
 }
-.Page-content .Page-content-right .owl-nav > div {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav > div {
   margin-top: -20px;
   position: absolute;
   top: 45%;
@@ -3593,41 +3621,41 @@ footer .site_footer_copyright p,
   border-radius: 50px;
   background: rgba(6, 6, 6, 0.6588235294);
 }
-.Page-content .Page-content-right .owl-nav > div:hover {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav > div:hover {
   color: #ffffff;
   background: #000000;
 }
-.Page-content .Page-content-right .owl-nav > div.disabled {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav > div.disabled {
   color: rgba(255, 255, 255, 0);
   background: rgba(99, 99, 99, 0);
 }
-.Page-content .Page-content-right .owl-nav > div.disabled {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav > div.disabled {
   color: rgba(255, 255, 255, 0);
   background: rgba(99, 99, 99, 0);
 }
-.Page-content .Page-content-right .owl-nav i {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav i {
   font-size: 20px;
   margin: 13px 18px;
 }
-.Page-content .Page-content-right .owl-nav .owl-prev {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav .owl-prev {
   left: -23px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Page-content .Page-content-right .owl-nav .owl-prev i:hover {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav .owl-prev i:hover {
   transition: all 0.3s ease-in-out;
 }
-.Page-content .Page-content-right .owl-nav .owl-next i:hover {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav .owl-next i:hover {
   transition: all 0.3s ease-in-out;
 }
-.Page-content .Page-content-right .owl-nav .owl-next {
+.Page-content .Page-content-right .Page-content-right_inner .owl-nav .owl-next {
   right: -23px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Page-content .Page-content-right .owl-carousel .owl-item .video-thumb.active:before {
+.Page-content .Page-content-right .Page-content-right_inner .owl-carousel .owl-item .video-thumb.active:before {
   opacity: 1;
   content: "";
   position: absolute;
@@ -3640,7 +3668,7 @@ footer .site_footer_copyright p,
   z-index: 1;
   transition: all 250ms ease-out;
 }
-.Page-content .Page-content-right .owl-carousel .owl-item .video-thumb:not(.active):hover:before {
+.Page-content .Page-content-right .Page-content-right_inner .owl-carousel .owl-item .video-thumb:not(.active):hover:before {
   opacity: 1;
   content: "";
   position: absolute;
@@ -3653,10 +3681,10 @@ footer .site_footer_copyright p,
   z-index: 1;
   transition: all 1s ease-out;
 }
-.Page-content .Page-content-right .video-thumb:not(.active):hover:before {
+.Page-content .Page-content-right .Page-content-right_inner .video-thumb:not(.active):hover:before {
   background: rgba(247, 148, 30, 0.3);
 }
-.Page-content .Page-content-right .video-thumb:after {
+.Page-content .Page-content-right .Page-content-right_inner .video-thumb:after {
   content: "\f144";
   font-family: "Font Awesome 5 Free";
   top: 50%;
@@ -3669,20 +3697,20 @@ footer .site_footer_copyright p,
   font-weight: 900;
   transition: all 250ms ease-out;
 }
-.Page-content .Page-content-right .video-thumb.active:after {
+.Page-content .Page-content-right .Page-content-right_inner .video-thumb.active:after {
   color: rgb(255, 255, 255);
 }
-.Page-content .Page-content-right .owl-carousel .owl-item img {
+.Page-content .Page-content-right .Page-content-right_inner .owl-carousel .owl-item img {
   position: relative;
 }
-.Page-content .Page-content-right #player .ytp-expand-pause-overlay .ytp-pause-overlay {
+.Page-content .Page-content-right .Page-content-right_inner #player .ytp-expand-pause-overlay .ytp-pause-overlay {
   display: none !important;
 }
-.Page-content .Page-content-right #playerWrap {
+.Page-content .Page-content-right .Page-content-right_inner #playerWrap {
   display: inline-block;
   position: relative;
 }
-.Page-content .Page-content-right #playerWrap.shown::after {
+.Page-content .Page-content-right .Page-content-right_inner #playerWrap.shown::after {
   content: "";
   position: absolute;
   top: 0;
@@ -3696,9 +3724,75 @@ footer .site_footer_copyright p,
   background-size: 64px 64px;
   background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
 }
-.Page-content .Page-content-right .loading__text__player {
+.Page-content .Page-content-right .Page-content-right_inner .loading__text__player {
   left: 50%;
   top: 50%;
 }
 
-/*=================SCORES_PAGE_END=================*//*# sourceMappingURL=style.css.map */
+/*=================SCORES_PAGE_END=================*/
+/*=================NFL_SHEDULE_PAGE_START=================*/
+.shedule_content {
+  background-color: #fff;
+  border: 1px solid #d9dbde;
+  margin-bottom: 30px;
+}
+.shedule_content .TableBase-title {
+  font-family: "FS Industrie", "FSIndustrie-Bold", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #656667;
+  display: block;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid #d9dbde;
+}
+.shedule_content .shedule_content_dek {
+  font-size: 14px;
+  font-weight: 400px;
+  color: #202121;
+  padding: 16px;
+  margin: 0;
+}
+.shedule_content .scrollbar-x {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.shedule_content .scrollbar-x .TableBase-shadows {
+  background-color: #f5f6f7;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-headTh {
+  width: 190px;
+  font-size: 12px;
+  color: #4b4c4d;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr {
+  background-color: #fff;
+  border: 1px solid #d9dbde;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd {
+  padding: 15px;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup {
+  display: flex;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup .TeamLogoNameLockup-logo {
+  width: 24px !important;
+  height: auto;
+  margin-right: 10px;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup .TeamLogoNameLockup-name {
+  font-size: 14px;
+  color: #202121;
+}
+.shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup .TeamLogoNameLockup-name:hover {
+  color: #004ace;
+}
+
+/*=================NFL_SHEDULE_PAGE_END=================*//*# sourceMappingURL=style.css.map */
