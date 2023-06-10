@@ -4592,12 +4592,64 @@ footer,
                     ul {
                         list-style: circle !important;
                         margin-left: 12px;
+                        margin-bottom: 10px;
                     }
 
                     strong {
-                        margin-top: 5px;
+                        margin-top: 10px;
+                    }
+
+                    li {
+                        list-style: disc;
+
+                    }
+
+                    .link {
+                        font-size: 12px;
+                    }
+
+
+                }
+
+                .DraftTrackerReactAccordion-table {
+                    font-weight: 400;
+                    border-bottom: 1px solid #d9dbde;
+
+
+                    .DraftTrackerReactRow_header {
+                        background-color: #f5f6f7;
+
+                        h4 {
+                            margin: 0;
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: #4b4c4d;
+                            text-align: center;
+                        }
+                    }
+
+                    .DraftTrackerReactRow_tdata {
+                        .DraftTrackerReactRow_td {
+                            font-size: 14px;
+                            text-align: center;
+                            background-color: #fff;
+                        }
+                    }
+
+                    .DraftTrackerReactAccordion-linkContainer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+
+                        .DraftTrackerReactAccordion-link {
+                            font-size: 12px;
+                            padding-bottom: 15px;
+
+                        }
                     }
                 }
+
+
             }
         }
     }
