@@ -3345,8 +3345,8 @@ footer .site_footer_copyright p,
   /*==================================*/
 }
 .Page-content .Page-content-left .PageSubNav {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .Page-content .Page-content-left .PageSubNav .ScoreboardNav {
   display: flex;
@@ -3581,6 +3581,7 @@ footer .site_footer_copyright p,
   max-width: 100%;
   padding: 10px;
   margin-top: 40px;
+  margin-left: auto;
 }
 @media only screen and (min-width: 1441px) {
   .Page-content .Page-content-right {
@@ -3823,6 +3824,9 @@ footer .site_footer_copyright p,
 .draft_tracker_content .DraftTrackerFiler_menu .filter-menu li:hover {
   border-bottom: 3px solid #0036b5;
 }
+.draft_tracker_content .draft_tracker_content_table {
+  border: 1px solid #d9dbde;
+}
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tableth {
   background-color: #f5f6f7;
   color: #656667;
@@ -3850,7 +3854,8 @@ footer .site_footer_copyright p,
   background-color: #f5f8ff;
 }
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding: 0px 10px;
 }
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td {
@@ -3964,7 +3969,7 @@ footer .site_footer_copyright p,
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .DraftTrackerReactAccordion-table .DraftTrackerReactRow_header h4 {
   margin: 0;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   color: #4b4c4d;
   text-align: center;
 }
@@ -3981,6 +3986,86 @@ footer .site_footer_copyright p,
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .DraftTrackerReactAccordion-table .DraftTrackerReactAccordion-linkContainer .DraftTrackerReactAccordion-link {
   font-size: 12px;
   padding-bottom: 15px;
+}
+
+.LiveBlogStream .LiveBlogStream-item,
+.LiveBlogStream .live-coverage-item {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px 0 rgba(32, 33, 33, 0.08);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.LiveBlogStream .LiveBlogStream-item .LiveBlogStream-footer,
+.LiveBlogStream .live-coverage-item .LiveBlogStream-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.LiveBlogStream .LiveBlogStream-item .LiveBlogStream-footer .Headshot,
+.LiveBlogStream .live-coverage-item .LiveBlogStream-footer .Headshot {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 15px;
+}
+.LiveBlogStream .LiveBlogStream-item .LiveBlogStream-footer .Headshot .Headshot-image,
+.LiveBlogStream .live-coverage-item .LiveBlogStream-footer .Headshot .Headshot-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.5px solid #4b4c4d;
+}
+.LiveBlogStream .LiveBlogStream-item .LiveBlogStream-footer .Headshot .Headshot-name,
+.LiveBlogStream .live-coverage-item .LiveBlogStream-footer .Headshot .Headshot-name {
+  font-size: 14px;
+  color: #202121;
+  margin-left: 10px;
+}
+.LiveBlogStream .LiveBlogStream-item .LiveBlogStream-footer .LiveBlogStream-timestamp,
+.LiveBlogStream .live-coverage-item .LiveBlogStream-footer .LiveBlogStream-timestamp {
+  padding-top: 5px;
+}
+.LiveBlogStream .LiveBlogStream-item .LiveBlogStream-footer .LiveBlogStream-timestamp .TimeStamp,
+.LiveBlogStream .live-coverage-item .LiveBlogStream-footer .LiveBlogStream-timestamp .TimeStamp {
+  font-size: 12px;
+  color: #757678;
+}
+.LiveBlogStream .LiveBlogStream-item .live-coverage-body p,
+.LiveBlogStream .live-coverage-item .live-coverage-body p {
+  font-size: 16px;
+  color: #202121;
+}
+.LiveBlogStream .LiveBlogStream-item .live-coverage-body p a,
+.LiveBlogStream .live-coverage-item .live-coverage-body p a {
+  text-decoration: underline;
+  color: #202121;
+}
+.LiveBlogStream .LiveBlogStream-item .live-coverage-body p a:hover,
+.LiveBlogStream .live-coverage-item .live-coverage-body p a:hover {
+  text-decoration: none;
+  color: #0064ff;
+}
+.LiveBlogStream .LiveBlogStream-seeMoreButton {
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 2px;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: normal;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  text-transform: none;
+  background-color: #004ace;
+  border: 1px solid #004ace;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 10px 7px;
+  width: 100%;
+}
+.LiveBlogStream .LiveBlogStream-seeMoreButton:hover {
+  background-color: #0036b5;
 }
 
 /*=================NFL_DRAFT_TRACKER_PAGE_END=================*//*# sourceMappingURL=style.css.map */

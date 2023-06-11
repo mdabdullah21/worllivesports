@@ -3868,8 +3868,8 @@ footer,
         max-width: 100%;
 
         .PageSubNav {
-            margin-top: 32px;
-            margin-bottom: 32px;
+            margin-top: 16px;
+            margin-bottom: 16px;
 
             .ScoreboardNav {
                 display: flex;
@@ -4160,6 +4160,7 @@ footer,
         max-width: 100%;
         padding: 10px;
         margin-top: 40px;
+        margin-left: auto;
 
         @include minwidth(1441px) {
             margin-top: 80px;
@@ -4453,6 +4454,8 @@ footer,
     }
 
     .draft_tracker_content_table {
+        border: 1px solid #d9dbde;
+
         .draft_tracker_content_tableth {
             background-color: #f5f6f7;
             color: #656667;
@@ -4483,7 +4486,8 @@ footer,
             }
 
             .accordion-header {
-                margin-top: 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
                 padding: 0px 10px;
 
                 .draft_tracker-td {
@@ -4535,6 +4539,7 @@ footer,
                         color: #202121;
                     }
                 }
+
             }
 
             .accordion-body-inner {
@@ -4622,7 +4627,7 @@ footer,
                         h4 {
                             margin: 0;
                             font-size: 12px;
-                            font-weight: 700;
+                            font-weight: 500;
                             color: #4b4c4d;
                             text-align: center;
                         }
@@ -4655,5 +4660,91 @@ footer,
     }
 }
 
+.LiveBlogStream {
+
+    .LiveBlogStream-item,
+    .live-coverage-item {
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 8px 0 rgba(32, 33, 33, .08);
+        padding: 20px;
+        margin-bottom: 30px;
+
+        .LiveBlogStream-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .Headshot {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-top: 15px;
+
+                .Headshot-image {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 0.5px solid #4b4c4d;
+                }
+
+                .Headshot-name {
+                    font-size: 14px;
+                    color: #202121;
+                    margin-left: 10px;
+                }
+            }
+
+            .LiveBlogStream-timestamp {
+                padding-top: 5px;
+
+                .TimeStamp {
+                    font-size: 12px;
+                    color: #757678;
+                }
+            }
+        }
+
+        .live-coverage-body {
+            p {
+                font-size: 16px;
+                color: #202121;
+
+                a {
+                    text-decoration: underline;
+                    color: #202121;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: #0064ff;
+                    }
+                }
+            }
+        }
+    }
+
+    .LiveBlogStream-seeMoreButton {
+        font-weight: 500;
+        line-height: 1;
+        border-radius: 2px;
+        box-shadow: none;
+        cursor: pointer;
+        display: inline-block;
+        letter-spacing: normal;
+        transition: background-color .2s ease;
+        text-align: center;
+        text-transform: none;
+        background-color: #004ace;
+        border: 1px solid #004ace;
+        color: #fff;
+        font-size: 0.75rem;
+        padding: 10px 7px;
+        width: 100%;
+
+        &:hover {
+            background-color: #0036b5;
+        }
+    }
+}
 
 /*=================NFL_DRAFT_TRACKER_PAGE_END=================*/
