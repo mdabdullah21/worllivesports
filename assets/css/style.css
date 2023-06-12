@@ -3846,7 +3846,6 @@ footer .site_footer_copyright p,
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd {
   display: flex;
   justify-content: center;
-  padding: 0px 7px;
   border: 1px solid #d9dbde;
   background-color: #fff;
 }
@@ -3862,7 +3861,8 @@ footer .site_footer_copyright p,
   color: #757678;
   font-size: 14px;
   margin: 0;
-  text-align: center;
+  text-align: start;
+  padding: 10px 0px;
 }
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .img {
   width: 40px;
@@ -3986,6 +3986,20 @@ footer .site_footer_copyright p,
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-body-inner .DraftTrackerReactAccordion-table .DraftTrackerReactAccordion-linkContainer .DraftTrackerReactAccordion-link {
   font-size: 12px;
   padding-bottom: 15px;
+}
+.draft_tracker_content .draft_tracker_content_table .see_more {
+  width: 100%;
+  border-top: 1px solid rgba(117, 118, 120, 0.431372549);
+  border-bottom: 1px solid rgba(117, 118, 120, 0.431372549);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.draft_tracker_content .draft_tracker_content_table .see_more .btn {
+  width: 200px;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 1px;
 }
 
 .LiveBlogStream .LiveBlogStream-item,
