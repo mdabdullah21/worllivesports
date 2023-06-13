@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/filter_gallery.css">
+    <link rel="stylesheet" href="assets/css/videopopup.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -105,14 +107,14 @@
                                     <a class="nav-link  " aria-current="page" href="nfl_scores.html">SCORES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="nfl_shedule.html">SCHEDULE</a>
+                                    <a class="nav-link " href="nfl_shedule.html">SCHEDULE</a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="nfl_draft.html">NFL DRAFT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="nfl_draft_tracker.html">DRAFT TRACKER</a>
+                                    <a class="nav-link" href="nfl_draft_tracker.html">DRAFT TRACKER</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="nfl_prospect_rangkings.html">Prospect Rankings</a>
@@ -123,11 +125,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="nfl_supper_bowl.html">Super Bowl</a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="sports_hq.html">Video</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="nfl_standings.html">Standings</a>
+                                    <a class="nav-link active" href="nfl_standings.html">Standings</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link "><svg class="svg-inline--fa fa-ellipsis" aria-hidden="true"
@@ -288,7 +291,7 @@
                                     <div class="PageTitle-content">
                                         <h1 id="PageTitle-header" class="PageTitle-header">
                                             <!-- <span>March Madness</span> -->
-                                            <span>NFL Schedule - Hall of Fame </span>
+                                            <span>NFL Standings</span>
                                         </h1>
                                     </div>
                                 </div>
@@ -297,15 +300,15 @@
 
                         <div class="PageTabsNav-wrap ">
                             <ul class="PageTabsNav">
-                                <li class="PageTabsNav-item is-selected"><a href="#" class="PageTabsNav-link active">
-                                        Schedule
+                                <li class="PageTabsNav-item "><a href="#" class="PageTabsNav-link ">
+                                        Preseason
+                                    </a></li>
+                                <li class="PageTabsNav-item "><a href="nfl_standings.html"
+                                        class="PageTabsNav-link active">
+                                        Regular Season
                                     </a></li>
                                 <li class="PageTabsNav-item "><a href="#" class="PageTabsNav-link">
-                                        Playoff Bracket
-                                    </a></li>
-                                <li class="PageTabsNav-item "><a href="#" target="_blank" class="PageTabsNav-link">
-                                        Buy Tickets <i class="fa-solid fa-arrow-up-right-from-square"
-                                            style="color: #808080;"></i>
+                                        Playoff Picture
                                     </a></li>
                             </ul>
                         </div>
@@ -316,119 +319,268 @@
         </div>
 
 
-        <div class="Page-content">
-            <div class="Page-content-left">
-                <div class="PageSubNav">
-                    <div class="ScoreboardNav">
-                        <div class="ScoreboardNav-main gy-2">
+        <div class="Page-content" style="border: 1px solid #d9dbde;">
+            <div class="Page-colMain">
+                <div class="TableBaseWrapper">
+                    <h4 class="TableBase-title">
+                        <div class="TeamLogoNameLockup">
+                            <span class="TeamLogoNameLockup-logo">
+                                <img class="TeamLogo-image " alt="team logo"
+                                    data-lazy="https://sportsfly.cbsistatic.com/fly-0487/bundles/sportsmediacss/images/conference-logos/nfl/AFC.svg"
+                                    src="https://sportsfly.cbsistatic.com/fly-0487/bundles/sportsmediacss/images/conference-logos/nfl/AFC.svg">
 
-                            <ul class="ToggleContainer">
-                                <div class="dropdown ms-3">
-                                    <button class="dropdown-toggle ToggleContainer-button" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hall of Fame
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><button class="dropdown-item" type="button">Hall of Fame</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 1</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 2</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 3</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 4</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 5</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 6</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 7</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 8</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 9</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 10</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 11</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 12</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 13</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 14</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 15</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 16</button></li>
-                                        <li><button class="dropdown-item" type="button">Pre Week 17</button></li>
-                                    </ul>
-                                </div>
-                            </ul>
+                            </span>
+                            <span class="TeamLogoNameLockup-name">
+                                AFC
+                            </span>
                         </div>
-
-                    </div>
+                    </h4>
                 </div>
-
-                <div class="shedule_content">
-                    <h4 class="TableBase-title">Thursday, August 3, 2023</h4>
-                    <div class="scrollbar-x">
-                        <div class="TableBase-shadows">
-                            <table>
-                                <thead>
-                                    <tr class="TableBase-headTr">
-                                        <th class="TableBase-headTh">Away </th>
-                                        <th class="TableBase-headTh">Home </th>
-                                        <th class="TableBase-headTh">Time </th>
-                                        <th class="TableBase-headTh">TV </th>
-                                        <th class="TableBase-headTh">Venue </th>
-                                        <th class="TableBase-headTh">Buy Tickets </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="TableBase-bodyTr">
-                                        <td class="TableBase-bodyTd" style=" min-width: 130px; width: 20%;">
-                                            <a class="CellLogoNameLockup" href="#">
-                                                <img class="TeamLogoNameLockup-logo"
-                                                    src="https://sports.cbsimg.net/fly/images/nfl/logos/team/423.svg"
-                                                    alt="">
-                                                <div class="TeamLogoNameLockup-name">N.Y. Jets</div>
-                                            </a>
-                                        </td>
-
-                                        <td class="TableBase-bodyTd" style=" min-width: 130px; width: 20%;">
-                                            <a class="CellLogoNameLockup" href="#">
-                                                <img class="TeamLogoNameLockup-logo"
-                                                    src="https://sports.cbsimg.net/fly/images/nfl/logos/team/434.svg"
-                                                    alt="">
-                                                <div class="TeamLogoNameLockup-name">Cleveland</div>
-                                            </a>
-                                        </td>
-
-                                        <td class="TableBase-bodyTd" style=" min-width: 130px; width: 20%;">
-                                            <a class="CellLogoNameLockup" href="#">
-                                                <div class="TeamLogoNameLockup-name">8:00</div>
-                                            </a>
-                                        </td>
-
-                                        <td class="TableBase-bodyTd" style=" min-width: 130px; width: 20%;">
-                                            <a class="CellLogoNameLockup" href="#">
-                                                <span class="TeamLogoNameLockup-name">NBC</span>
-                                            </a>
-                                        </td>
-                                        <td class="TableBase-bodyTd" style=" min-width: 130px; width: 20%;">
-                                            <a class="CellLogoNameLockup" href="#">
-                                                <span class="TeamLogoNameLockup-name">Tom Benson HOF Stadium</span>
-                                            </a>
-                                        </td>
-                                        <td class="TableBase-bodyTd" style=" min-width: 130px; width: 20%;">
-                                            <a class="CellLogoNameLockup" href="#">
-                                                <span class="TeamLogoNameLockup-name">__</span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="shedule_content">
-                    <h4 class="TableBase-title">Notes</h4>
-                    <p class="shedule_content_dek">All times are US/Eastern.</p>
-                </div>
-                <aside class="Page-content-right">
-
-                </aside>
             </div>
+            <div class="TableBase_scores">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr class="TableBase_scores-theadtr">
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+                                <th class="TableBase_scores-theadth">
+
+                                </th>
+
+                                <th class="TableBase_scores-theadth TableBase-headTh-grouped1" colspan="3">
+                                    Projections
+                                </th>
 
 
+                            </tr>
+                            <tr class="TableBase-headTr">
+                                <th class="TableBase-headTh  ">
+                                    East
+                                </th>
+                                <th class="TableBase-headTh ">
+                                    W
+                                    <div class="Tablebase-tooltip">
+                                        <div class="Tablebase-tooltipInner">
+                                            Wins
+                                        </div>
+                                    </div>
+                                </th>
+
+                                <th class="TableBase-headTh ">
+                                    L
+
+                                    <div class="Tablebase-tooltip
+                                        ">
+                                        <div class="Tablebase-tooltipInner">
+                                            Losses
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    T
+
+                                    <div class="Tablebase-tooltip
+                                        ">
+                                        <div class="Tablebase-tooltipInner">
+                                            Ties
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    PCT
+
+                                    <div class="Tablebase-tooltip
+                                        ">
+                                        <div class="Tablebase-tooltipInner">
+                                            Win
+                                            <br>
+                                            Percentage
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    PF
+
+                                    <div class="Tablebase-tooltip
+                                        ">
+                                        <div class="Tablebase-tooltipInner">
+                                            Points for
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    PA
+
+                                    <div class="Tablebase-tooltip
+                                        ">
+                                        <div class="Tablebase-tooltipInner">
+                                            Points<br> allowed
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    Diff
+
+                                    <div class="Tablebase-tooltip
+                                        ">
+                                        <div class="Tablebase-tooltipInner">
+                                            Point-<br>differential
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    Home
+
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Home <br>record
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    Road
+
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Road <br>record
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    Div
+
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Record <br>against <br>division <br>opponents
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    Conf
+
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Record <br>against <br>conference <br>opponents
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    OConf
+
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Record
+                                            vs. <br>
+                                            non-conference <br>
+                                            teams
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh ">
+
+                                    STRK
+
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Streak
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh 
+                                TableBase-headTh--grouped1">
+                                    W
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Wins <br>
+                                            projection
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh"> Div
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Division <br>
+                                            winner <br>
+                                            projection
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="TableBase-headTh 
+                                TableBase-headTh--grouped1
+                                
+                                ">Post
+                                    <div class="Tablebase-tooltip
+                                        Tablebase-tooltip--right">
+                                        <div class="Tablebase-tooltipInner">
+                                            Postseason <br>
+                                            projection
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
         </div>
+
+
+        <!-- footer_section_start -->
         <footer class="footer">
             <h1 class="h1">
                 WORLDS LIVE SPORTS
@@ -471,7 +623,8 @@
                         <a href="https://www.cbssports.com/mobile" title="Mobile Apps">Mobile Apps</a>
                     </li>
                     <li>
-                        <a href="https://www.cbs.com/closed-captioning/" title="Closed Captioning">Closed Captioning</a>
+                        <a href="https://www.cbs.com/closed-captioning/" title="Closed Captioning">Closed
+                            Captioning</a>
                     </li>
                     <li>
                         <a href="https://privacy.paramount.com/policy" target="_blank" title="Privacy Policy">Privacy
@@ -482,7 +635,8 @@
                             title="Terms Of Use">Terms Of Use</a>
                     </li>
                     <li>
-                        <a class="ot-sdk-show-settings" title="Do Not Sell My Personal Information">Cookie Details</a>
+                        <a class="ot-sdk-show-settings" title="Do Not Sell My Personal Information">Cookie
+                            Details</a>
                     </li>
                 </ul>
             </div>
@@ -503,8 +657,34 @@
 <script src="assets/js/fluidify.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/videopopup.js"></script>
 
 
+<!-- video_PopUp_js_start -->
+<script type="text/javascript">
+    $(function () {
+        $('#vidBox').VideoPopUp({
+            backgroundColor: "#17212a",
+            opener: "video1",
+            idvideo: "v1",
+            pausevideo: false
+        });
+    });
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46156385-1', 'cssscript.com');
+    ga('send', 'pageview');
+
+</script>
+<!-- video_PopUp_js_End -->
 
 
 <script>
@@ -613,6 +793,35 @@
         });
     } catch (error) {
         console.log(error);
+    }
+</script>
+
+<!-- filterGallary_Script -->
+<script>
+    let sortBtn = document.querySelector('.filter-menu').children;
+    let sortItem = document.querySelector('.filter-item').children;
+
+    for (let i = 0; i < sortBtn.length; i++) {
+        sortBtn[i].addEventListener('click', function () {
+            for (let j = 0; j < sortBtn.length; j++) {
+                sortBtn[j].classList.remove('current');
+            }
+
+            this.classList.add('current');
+
+
+            let targetData = this.getAttribute('data-target');
+
+            for (let k = 0; k < sortItem.length; k++) {
+                sortItem[k].classList.remove('active');
+                sortItem[k].classList.add('delete');
+
+                if (sortItem[k].getAttribute('data-item') == targetData || targetData == "all") {
+                    sortItem[k].classList.remove('delete');
+                    sortItem[k].classList.add('active');
+                }
+            }
+        });
     }
 </script>
 

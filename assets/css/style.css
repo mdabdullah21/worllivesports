@@ -207,7 +207,7 @@ h6,
   }
 }
 .container {
-  width: 1230px !important;
+  width: 1230px;
   max-width: 100%;
   margin: auto;
   padding: 0;
@@ -2222,7 +2222,6 @@ footer .site_footer_copyright p,
   font-size: 16px;
   padding: 16px 10px;
   border-bottom: 1px solid rgba(101, 102, 103, 0.3843137255);
-  margin: 0;
 }
 .tournament-latest-news .tournament-latest-news_outer .scrollbox {
   overflow-y: hidden;
@@ -3827,6 +3826,64 @@ footer .site_footer_copyright p,
 .draft_tracker_content .draft_tracker_content_table {
   border: 1px solid #d9dbde;
 }
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_table-outer {
+  width: 460px;
+  max-width: 100%;
+  border: 1px solid #d9dbde;
+  margin-top: 30px;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop {
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #d9dbde;
+  border-bottom: 1px solid #d9dbde;
+  justify-content: space-between;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .HeadshotAndName {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .HeadshotAndName .Headshot-image {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #d9dbde;
+  margin-right: 10px;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .HeadshotAndName .HeadshotAndName-name .HeadshotAndName-twitter {
+  font-size: 14px;
+  color: #202121;
+  font-weight: 500;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .HeadshotAndName .HeadshotAndName-name .HeadshotAndName-twitter:hover {
+  color: #0064ff;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .HeadshotAndName .HeadshotAndName-name .HeadshotAndName-user .TwitterHandle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1da1f2;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .MockDraft-columnPromo {
+  width: 50%;
+  text-align: end;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .MockDraft-columnPromo .MockDraft-updated {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757678;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .MockDraft-columnPromo .MockDraft-analysis a {
+  font-size: 14px;
+  color: #202121;
+  font-weight: 500;
+}
+.draft_tracker_content .draft_tracker_content_table .MockDraft-columnTop .MockDraft-columnPromo .MockDraft-analysis a:hover {
+  color: #0064ff;
+}
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tableth {
   background-color: #f5f6f7;
   color: #656667;
@@ -3866,6 +3923,23 @@ footer .site_footer_copyright p,
 }
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .img {
   width: 40px;
+  margin: 0;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .cell-player-info .cell-text {
+  font-size: 14px;
+  color: #202121;
+  font-weight: 500;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .cell-player-info .cell-text:hover {
+  color: #0036b5;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .cell-player-info .player-details {
+  font-size: 14px;
+  color: #202121;
+  font-weight: 400;
+}
+.draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .cell-player-info .player-details:hover {
+  color: #0036b5;
 }
 .draft_tracker_content .draft_tracker_content_table .draft_tracker_content_tabletd .accordion-header .draft_tracker-td .draft_tracker-td_title {
   font-size: 16px;
@@ -4082,4 +4156,203 @@ footer .site_footer_copyright p,
   background-color: #0036b5;
 }
 
-/*=================NFL_DRAFT_TRACKER_PAGE_END=================*//*# sourceMappingURL=style.css.map */
+/*=================NFL_DRAFT_TRACKER_PAGE_END=================*/
+/*=================NFL_SUPPER_BOWL_PAGE_START=================*/
+.scores-stack-pos .scores-stack-inner {
+  color: #fff;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.scores-stack-pos .scores-stack-inner .scores-team {
+  width: 50%;
+  padding: 8px 14px 5px;
+}
+.scores-stack-pos .scores-stack-inner .scores-team.team-away {
+  text-align: right;
+  position: relative;
+}
+.scores-stack-pos .scores-stack-inner .scores-team.team-away .team-logo {
+  width: 100px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: auto 205%;
+  bottom: 0;
+  display: block;
+  left: 4px;
+  position: absolute;
+  right: 4px;
+  top: 0;
+}
+.scores-stack-pos .scores-stack-inner .scores-team.team-away .winner-icon {
+  position: absolute;
+  right: 0;
+}
+.scores-stack-pos .scores-stack-inner .scores-team.team-home {
+  text-align: left;
+  position: relative;
+}
+.scores-stack-pos .scores-stack-inner .scores-team.team-home .team-logo {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 205%;
+  bottom: 0;
+  display: block;
+  left: 4px;
+  position: absolute;
+  right: 4px;
+  top: 0;
+}
+
+.scores-info {
+  margin-bottom: 10px;
+}
+.scores-info .info-col {
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #050d27;
+  box-sizing: border-box;
+  display: table;
+  overflow: hidden;
+  padding: 3px 2px 2px 5px;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.SBEventTop {
+  background-color: #00259e;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  text-shadow: 1px 1px 4px #2a2b2b;
+}
+.SBEventTop .SBEventPromo-logo {
+  background: url("//sportsfly.cbsistatic.com/fly-0487/bundles/sportsmediacss/images/core/superbowl-logo.svg") no-repeat center center;
+  background-size: auto;
+  background-size: contain;
+  height: 90px;
+  right: 30px;
+  position: absolute;
+  height: 90px;
+  left: 30px;
+  top: 10px;
+  width: 105px;
+}
+.SBEventTop .SBEventPromo-lockup {
+  padding: 1px 20px;
+  margin-left: 152px;
+}
+.SBEventTop .SBEventPromo-lockup .SBEventPromo-date {
+  font-size: 13px;
+  font-weight: 700;
+  color: #d7d9da;
+}
+.SBEventTop .SBEventPromo-lockup .SBEventPromo-location {
+  font-size: 13px;
+  font-weight: 400;
+  color: #d7d9da;
+}
+
+/*=================NFL_SUPPER_BOWL_PAGE_END=================*/
+/*=================NFL_STANDINGS_PAGE_START=================*/
+.Page-colMain {
+  width: 100%;
+  border: 1px solid #d9dbde;
+}
+.Page-colMain .TableBaseWrapper {
+  margin-bottom: 32px;
+}
+.Page-colMain .TableBaseWrapper .TableBase-title {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #656667;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin: 0;
+  background-color: #fff;
+}
+.Page-colMain .TableBaseWrapper .TableBase-title .TeamLogoNameLockup {
+  display: flex;
+  align-items: center;
+}
+.Page-colMain .TableBaseWrapper .TableBase-title .TeamLogoNameLockup .TeamLogoNameLockup-logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.TableBase_scores {
+  width: 100%;
+}
+.TableBase_scores .TableBase-headTh-grouped1 {
+  background-color: rgba(217, 219, 222, 0.4);
+  border: 1px solid #d9dbde;
+  text-align: center;
+}
+.TableBase_scores .TableBase_scores-theadtr .TableBase_scores-theadth,
+.TableBase_scores .TableBase_scores-theadtr .TableBase-headTh,
+.TableBase_scores .TableBase-headTr .TableBase_scores-theadth,
+.TableBase_scores .TableBase-headTr .TableBase-headTh {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 16px 8px 13px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.TableBase_scores .TableBase_scores-theadtr .TableBase_scores-theadth:hover .Tablebase-tooltip,
+.TableBase_scores .TableBase_scores-theadtr .TableBase-headTh:hover .Tablebase-tooltip,
+.TableBase_scores .TableBase-headTr .TableBase_scores-theadth:hover .Tablebase-tooltip,
+.TableBase_scores .TableBase-headTr .TableBase-headTh:hover .Tablebase-tooltip {
+  display: block;
+  margin-top: -5px;
+  position: absolute;
+  top: 100%;
+  transition-delay: 0.5s;
+  z-index: 1;
+}
+.TableBase_scores .TableBase_scores-theadtr .TableBase_scores-theadth:first-child,
+.TableBase_scores .TableBase_scores-theadtr .TableBase-headTh:first-child,
+.TableBase_scores .TableBase-headTr .TableBase_scores-theadth:first-child,
+.TableBase_scores .TableBase-headTr .TableBase-headTh:first-child {
+  padding-left: 16px;
+}
+.TableBase_scores .TableBase_scores-theadtr .TableBase_scores-theadth .CellLogoNameLockup,
+.TableBase_scores .TableBase_scores-theadtr .TableBase-headTh .CellLogoNameLockup,
+.TableBase_scores .TableBase-headTr .TableBase_scores-theadth .CellLogoNameLockup,
+.TableBase_scores .TableBase-headTr .TableBase-headTh .CellLogoNameLockup {
+  display: flex;
+  white-space: nowrap;
+}
+.TableBase_scores .TableBase_scores-theadtr .TableBase_scores-theadth .Tablebase-tooltip,
+.TableBase_scores .TableBase_scores-theadtr .TableBase-headTh .Tablebase-tooltip,
+.TableBase_scores .TableBase-headTr .TableBase_scores-theadth .Tablebase-tooltip,
+.TableBase_scores .TableBase-headTr .TableBase-headTh .Tablebase-tooltip {
+  display: none;
+}
+.TableBase_scores .TableBase_scores-theadtr .TableBase_scores-theadth .Tablebase-tooltip .Tablebase-tooltipInner,
+.TableBase_scores .TableBase_scores-theadtr .TableBase-headTh .Tablebase-tooltip .Tablebase-tooltipInner,
+.TableBase_scores .TableBase-headTr .TableBase_scores-theadth .Tablebase-tooltip .Tablebase-tooltipInner,
+.TableBase_scores .TableBase-headTr .TableBase-headTh .Tablebase-tooltip .Tablebase-tooltipInner {
+  font-size: 12px;
+  background-color: #000;
+  color: #fff;
+  padding: 7px 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/*=================NFL_STANDINGS_PAGE_END=================*//*# sourceMappingURL=style.css.map */
