@@ -4006,9 +4006,9 @@ footer,
                                     margin-right: 10px;
                                 }
 
-                                .team-name-link {
-                                    // display: inline;
-                                }
+                                // .team-name-link {
+                                //     // display: inline;
+                                // }
                             }
 
                             .in-progress-odds {
@@ -4396,6 +4396,15 @@ footer,
 
                 .TableBase-bodyTd {
                     padding: 15px;
+
+                    .TableBase-bodyTd_a {
+                        font-size: 14px;
+                        color: #202121 !important;
+
+                        &:hover {
+                            color: #004ace;
+                        }
+                    }
 
 
                     .CellLogoNameLockup {
@@ -4976,7 +4985,7 @@ footer,
         padding: 1px 20px;
         margin-left: 152px;
 
-        .SBEventPromo-title {}
+        // .SBEventPromo-title {}
 
         .SBEventPromo-date {
             font-size: 13px;
@@ -4996,12 +5005,22 @@ footer,
 
 
 /*=================NFL_STANDINGS_PAGE_START=================*/
+
+.Page-colMain_wrapper {
+    width: 100%;
+    margin: auto;
+}
+
 .Page-colMain {
     width: 100%;
     border: 1px solid #d9dbde;
 
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
     .TableBaseWrapper {
-        margin-bottom: 32px;
+        // margin-bottom: 32px;
 
         .TableBase-title {
             font-weight: 500;
@@ -5034,24 +5053,39 @@ footer,
 
     .TableBase-headTh-grouped1 {
         background-color: rgba(217, 219, 222, .4);
-        border: 1px solid #d9dbde;
-        text-align: center;
+        // border: 1px solid #d9dbde;
+        text-align: center !important;
     }
+
+    .TableBase-headTh-grouped2 {
+        background-color: rgba(245, 246, 247, .5);
+        text-align: right;
+        // border: 1px solid #d9dbde;
+
+
+    }
+
+
 
     .TableBase_scores-theadtr,
     .TableBase-headTr {
+        .first_col {
+            width: 200px;
+            text-align: start !important;
+        }
 
         .TableBase_scores-theadth,
         .TableBase-headTh {
             text-transform: uppercase;
             white-space: nowrap;
-            font-size: 0.75rem;
             letter-spacing: .08em;
             padding: 16px 8px 13px;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
+            color: #4b4c4d;
             cursor: pointer;
             position: relative;
+            text-align: right;
 
 
             &:hover .Tablebase-tooltip {
@@ -5094,6 +5128,171 @@ footer,
 
         }
     }
+
+    .TableBase-body {
+        .TableBase-bodyTr {
+            border-bottom: 1px solid #d9dbde;
+            transition: background-color .5s;
+            background-color: #fff;
+
+            &:hover {
+                background-color: #f5f8ff;
+            }
+
+            .TableBase-bodyTd {
+                font-size: 14px;
+
+
+                a {
+                    color: #202121;
+                    transition: color .2s ease;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: 10px;
+
+                    &:hover {
+                        color: #0036b5;
+                    }
+                }
+
+                &.TableBase-bodyTd_number {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #202121;
+                    text-align: right;
+                }
+
+                &.TableBase-bodyTd_number_ts {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #202121;
+                    text-align: left;
+                }
+
+                .TeamLogoNameLockup {
+                    display: flex;
+                    justify-content: left;
+                    flex-wrap: nowrap;
+                    align-items: center;
+
+                    .TeamLogoNameLockup-logo {
+                        width: 30px;
+                        margin-right: 7px;
+                    }
+
+                    .TeamLogoNameLockup-name {
+                        .Team-name {
+                            color: #202121;
+                            transition: color .2s ease;
+                            font-size: 14px;
+                            font-weight: 500;
+
+                            &:hover {
+                                color: #0036b5;
+                            }
+                        }
+                    }
+
+                    .CellLogoNameLockup-playoffSymbol {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #656667;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.TableBase-legend {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d9dbde;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    overflow: hidden;
+    padding: 20px 0px;
+    zoom: 1;
+    line-height: 1.3;
+    color: #202121;
+
+    .Card-title {
+        font-weight: 500;
+        line-height: 1.2;
+        color: #656667;
+        display: block;
+        font-size: 16px;
+        padding-bottom: 16px;
+        padding-left: 20px;
+        margin: 0;
+        border-bottom: 1px solid #d9dbde;
+    }
+
+    .TableBase-legendColumnText {
+        padding: 20px;
+        margin-left: 5px;
+
+        @include minwidth(586px) {
+            margin-left: 10px;
+        }
+    }
 }
 
 /*=================NFL_STANDINGS_PAGE_END=================*/
+
+
+/*=================NFL_TEAMS_PAGE_END=================*/
+
+.Page-colMain_wrapper-inner {
+    margin: auto;
+
+    @include minwidth(1441px) {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .TableBase_scores_mainbox {
+        width: 700px;
+        max-width: 100%;
+        margin: 15px auto;
+        border: 1px solid #d9dbde;
+
+
+        @include minwidth(1441px) {
+            margin: 0;
+        }
+    }
+}
+
+/*=================NFL_TEAMS_PAGE_END=================*/
+
+
+
+/*=================NFL_Player Search_END=================*/
+
+.SearchInputContainer {
+    width: 100%;
+
+    .players_search_title {
+        color: #202121;
+    }
+
+    .players_search-box {
+        margin-bottom: 20px;
+
+        .players_search-input {
+            width: 830px;
+            max-width: 100%;
+            font-size: 16px;
+            padding: 12px 16px;
+            // border: none;
+            border: 1px solid #d9dbde;
+        }
+
+    }
+}
+
+/*=================NFL_Player Search_END=================*/
