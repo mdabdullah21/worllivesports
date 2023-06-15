@@ -3863,77 +3863,77 @@ footer,
     justify-content: center;
     flex-wrap: wrap;
 
-    .Page-content-left {
-        width: 950px;
-        max-width: 100%;
+    .PageSubNav {
+        margin-top: 16px;
+        margin-bottom: 16px;
 
-        .PageSubNav {
-            margin-top: 16px;
-            margin-bottom: 16px;
+        .ScoreboardNav {
+            display: flex;
+            justify-content: space-between;
 
-            .ScoreboardNav {
+            .ScoreboardNav-main {
                 display: flex;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: center;
 
-                .ScoreboardNav-main {
+                .ToggleContainer {
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
 
-                    .ToggleContainer {
-                        display: flex;
+                    /* dropdown_menu_scroll */
+                    // .scrollbox-y {
+                    //     overflow-x: hidden;
+                    //     overflow-y: scroll;
+                    //     height: 400px;
+                    //     z-index: 112;
+                    // }
+                    .dropdown-menu {
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        max-height: 300px;
 
-                        /* dropdown_menu_scroll */
-                        // .scrollbox-y {
-                        //     overflow-x: hidden;
-                        //     overflow-y: scroll;
-                        //     height: 400px;
-                        //     z-index: 112;
-                        // }
-                        .dropdown-menu {
-                            overflow-y: auto;
-                            overflow-x: hidden;
-                            max-height: 300px;
+                        .dropdown-item {
+                            font-size: 12px !important;
+                        }
+                    }
 
-                            .dropdown-item {
-                                font-size: 12px !important;
-                            }
+
+                    .ToggleContainer-button {
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        background-color: #fff;
+                        border: 1px solid #d9dbde;
+                        // border-right-color: rgb(217, 219, 222);
+                        // border-right-style: solid;
+                        // border-right-width: 1px;
+                        // border-right: none;
+                        color: #656667;
+                        cursor: pointer;
+                        letter-spacing: normal;
+                        text-transform: none;
+                        padding: 5px 20px;
+
+                        &:hover {
+                            border: 1px solid #004ace;
+                            color: #202121;
                         }
 
+                        .active {
+                            border: 1px solid #004ace !important;
+                            color: #202121 !important;
+                        }
 
-                        .ToggleContainer-button {
-                            font-size: 0.75rem;
-                            font-weight: 500;
-                            background-color: #fff;
-                            border: 1px solid #d9dbde;
-                            // border-right-color: rgb(217, 219, 222);
-                            // border-right-style: solid;
-                            // border-right-width: 1px;
-                            // border-right: none;
+                        .ToggleContainer-text {
                             color: #656667;
-                            cursor: pointer;
-                            letter-spacing: normal;
-                            text-transform: none;
-                            padding: 5px 20px;
-
-                            &:hover {
-                                border: 1px solid #004ace;
-                                color: #202121;
-                            }
-
-                            .active {
-                                border: 1px solid #004ace !important;
-                                color: #202121 !important;
-                            }
-
-                            .ToggleContainer-text {
-                                color: #656667;
-                            }
                         }
                     }
                 }
             }
         }
+    }
+
+    .Page-content-left {
+        width: 950px;
+        max-width: 100%;
 
         .scrollbox-x {
             overflow-x: scroll;
@@ -5069,6 +5069,8 @@ footer,
 
     .TableBase_scores-theadtr,
     .TableBase-headTr {
+        background-color: #f5f6f7;
+
         .first_col {
             width: 200px;
             text-align: start !important;
@@ -5141,6 +5143,12 @@ footer,
 
             .TableBase-bodyTd {
                 font-size: 14px;
+
+                .CellLogoNameLockup-playoffSymbol {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #656667;
+                }
 
 
                 a {
@@ -5247,6 +5255,8 @@ footer,
 
 .Page-colMain_wrapper-inner {
     margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
 
     @include minwidth(1441px) {
         display: flex;
@@ -5259,10 +5269,12 @@ footer,
         max-width: 100%;
         margin: 15px auto;
         border: 1px solid #d9dbde;
+        margin-bottom: 30px;
 
 
         @include minwidth(1441px) {
             margin: 0;
+            margin-bottom: 30px;
         }
     }
 }
@@ -5296,3 +5308,285 @@ footer,
 }
 
 /*=================NFL_Player Search_END=================*/
+
+
+/*=================NFL_football_pickme_STRAT=================*/
+.football_pickme_banner {
+    width: 100%;
+
+    .tournament_section {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        padding: 16px 30px 30px;
+
+        .official-text-container {
+            .bracket-splash-title {
+                text-align: center;
+
+                @include minwidth(1400px) {
+                    font-size: 32px;
+
+                }
+            }
+
+            // .bracket-splash-description {}
+
+            .highlander-newsletter {
+                width: 100%;
+
+                .block-top-bar {
+                    width: 100px;
+                    max-width: 100%;
+                    margin: auto;
+                    border: 2px solid #0036b5;
+                }
+
+                .form-not-sent {
+                    text-align: center;
+
+                    .highlander-newsletter-title {
+                        font-size: 1.25rem;
+                        font-weight: 400;
+                        display: block;
+                        overflow: hidden;
+                        padding-top: 2px;
+                    }
+
+                    .Newsletter-emailAddress {
+                        box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2) inset;
+
+                        font-weight: 400;
+                        border: 1px solid #757678;
+                        border-radius: 2px;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        text-align: left;
+                        vertical-align: middle;
+                        width: auto;
+                        line-height: 1.6;
+                        font-size: 30px;
+                        padding: 1px 2px 1px 12px;
+                    }
+
+                    .Newsletter-submit-button {
+                        font-weight: 500;
+                        line-height: 1;
+                        border: 0;
+                        border-radius: 2px;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        display: inline-block;
+                        text-align: center;
+                        text-transform: uppercase;
+                        transition: background-color .2s ease;
+                        vertical-align: middle;
+                        width: auto;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        padding: 20px 30px;
+                        background-color: #004ace;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #002f82;
+                        }
+                    }
+
+                    .highlander-newsletter-promise {
+                        font-size: 11px;
+                        margin-top: 12px;
+                        opacity: .6;
+                    }
+                }
+
+                .tournament-footer {
+                    text-align: center;
+                    margin: auto;
+
+                    .tournament-footer-title {
+                        text-transform: uppercase;
+                        font-weight: 900;
+
+                        @include minwidth(1400px) {
+                            font-size: 32px;
+
+                        }
+                    }
+
+                    .tournament-footer-points {
+                        margin-bottom: 30px;
+
+                        @include minwidth(768px) {
+
+                            margin-bottom: 40px;
+                        }
+
+                        .tournament-footer-point {
+                            font-size: 18px;
+                            font-weight: 400;
+                            letter-spacing: 0.5;
+
+                            @include minwidth(768px) {
+                                font-size: 20px;
+                            }
+
+                            @include minwidth(992px) {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=================NFL_football_pickme_END=================*/
+
+
+/*=================NFL_STATES_PAGE_START=================*/
+
+.StatsLeadersCard {
+    background-color: #fff;
+
+    .Card-titleSeparate {
+        font-weight: 500;
+        line-height: 1.2;
+        color: #656667;
+        display: block;
+        font-size: 16px;
+        border-bottom: 1px solid #d9dbde;
+        padding: 16px;
+        margin: 0;
+    }
+}
+
+.TableBase-footer {
+    background-color: #fff;
+    border-top: 1px solid #d9dbde;
+    padding: 20px;
+    text-align: center;
+
+    .TableBase-footerItem {
+        font-size: 0.75rem;
+        font-weight: 500;
+
+        cursor: pointer;
+        text-align: center;
+
+        a {
+            color: #202121;
+
+            &:hover {
+                color: #0036b5;
+            }
+        }
+
+
+    }
+}
+
+.StatsLeadersCard-content {
+    padding: 20px;
+
+    .StatsLeadersCard-cardInfo {
+        display: flex;
+        align-items: center;
+
+        .StatsLeadersCard-headshot {
+            .HeadshotAndLogoLockup-logo {
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                z-index: 3;
+                vertical-align: middle;
+                height: 40px;
+                width: 40px;
+
+
+            }
+
+            .HeadshotAndLogoLockup-headshot {
+                display: inline-block;
+                margin-left: -10%;
+
+                .Headshot-image {
+                    background-color: #fff;
+                    border: 1px solid #d9dbde;
+                    border-radius: 50%;
+                    box-sizing: content-box;
+                    display: inline-block;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+
+        .StatsLeadersCard-rank {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #202121;
+            padding-right: 12px;
+        }
+
+        .StatsLeadersCard-playerName {
+            width: 250px;
+            max-width: 100%;
+            margin-left: 10px;
+
+            .PlayerName {
+                font-size: 14px;
+                font-weight: 500;
+
+                a {
+                    color: #202121;
+
+                    &:hover {
+                        color: #0036b5;
+                    }
+                }
+
+
+            }
+
+            .StatsLeadersCard-playerDetails {
+
+
+                .StatsLeadersCard-list {
+                    display: flex;
+                    justify-content: left;
+
+                    .StatsLeadersCard-listItem {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #757678;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .StatsLeadersCard-featuredStat {
+            .StatsLeadersCard-statValue {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #202121;
+                text-align: right;
+            }
+
+            .StatsLeadersCard-statTitle {
+                font-weight: 400;
+                color: #4b4c4d;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-size: 11px;
+                text-align: right;
+            }
+        }
+    }
+
+}
+
+/*=================NFL_STATES_PAGE__END=================*/

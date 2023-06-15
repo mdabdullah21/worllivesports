@@ -3338,37 +3338,32 @@ footer .site_footer_copyright p,
   justify-content: center;
   flex-wrap: wrap;
 }
-.Page-content .Page-content-left {
-  width: 950px;
-  max-width: 100%;
-  /*==================================*/
-}
-.Page-content .Page-content-left .PageSubNav {
+.Page-content .PageSubNav {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav {
+.Page-content .PageSubNav .ScoreboardNav {
   display: flex;
   justify-content: space-between;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer {
   display: flex;
   /* dropdown_menu_scroll */
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .dropdown-menu {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .dropdown-menu {
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 300px;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .dropdown-menu .dropdown-item {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .dropdown-menu .dropdown-item {
   font-size: 12px !important;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button {
   font-size: 0.75rem;
   font-weight: 500;
   background-color: #fff;
@@ -3379,16 +3374,21 @@ footer .site_footer_copyright p,
   text-transform: none;
   padding: 5px 20px;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button:hover {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button:hover {
   border: 1px solid #004ace;
   color: #202121;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button .active {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button .active {
   border: 1px solid #004ace !important;
   color: #202121 !important;
 }
-.Page-content .Page-content-left .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button .ToggleContainer-text {
+.Page-content .PageSubNav .ScoreboardNav .ScoreboardNav-main .ToggleContainer .ToggleContainer-button .ToggleContainer-text {
   color: #656667;
+}
+.Page-content .Page-content-left {
+  width: 950px;
+  max-width: 100%;
+  /*==================================*/
 }
 .Page-content .Page-content-left .scrollbox-x {
   overflow-x: scroll;
@@ -4314,6 +4314,10 @@ footer .site_footer_copyright p,
   background-color: rgba(245, 246, 247, 0.5);
   text-align: right;
 }
+.TableBase_scores .TableBase_scores-theadtr,
+.TableBase_scores .TableBase-headTr {
+  background-color: #f5f6f7;
+}
 .TableBase_scores .TableBase_scores-theadtr .first_col,
 .TableBase_scores .TableBase-headTr .first_col {
   width: 200px;
@@ -4385,6 +4389,11 @@ footer .site_footer_copyright p,
 }
 .TableBase_scores .TableBase-body .TableBase-bodyTr .TableBase-bodyTd {
   font-size: 14px;
+}
+.TableBase_scores .TableBase-body .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup-playoffSymbol {
+  font-size: 14px;
+  font-weight: 400;
+  color: #656667;
 }
 .TableBase_scores .TableBase-body .TableBase-bodyTr .TableBase-bodyTd a {
   color: #202121;
@@ -4470,6 +4479,8 @@ footer .site_footer_copyright p,
 /*=================NFL_TEAMS_PAGE_END=================*/
 .Page-colMain_wrapper-inner {
   margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 @media only screen and (min-width: 1441px) {
   .Page-colMain_wrapper-inner {
@@ -4482,10 +4493,12 @@ footer .site_footer_copyright p,
   max-width: 100%;
   margin: 15px auto;
   border: 1px solid #d9dbde;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 1441px) {
   .Page-colMain_wrapper-inner .TableBase_scores_mainbox {
     margin: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -4508,4 +4521,231 @@ footer .site_footer_copyright p,
   border: 1px solid #d9dbde;
 }
 
-/*=================NFL_Player Search_END=================*//*# sourceMappingURL=style.css.map */
+/*=================NFL_Player Search_END=================*/
+/*=================NFL_football_pickme_STRAT=================*/
+.football_pickme_banner {
+  width: 100%;
+}
+.football_pickme_banner .tournament_section {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding: 16px 30px 30px;
+}
+.football_pickme_banner .tournament_section .official-text-container .bracket-splash-title {
+  text-align: center;
+}
+@media only screen and (min-width: 1400px) {
+  .football_pickme_banner .tournament_section .official-text-container .bracket-splash-title {
+    font-size: 32px;
+  }
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter {
+  width: 100%;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .block-top-bar {
+  width: 100px;
+  max-width: 100%;
+  margin: auto;
+  border: 2px solid #0036b5;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .form-not-sent {
+  text-align: center;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .form-not-sent .highlander-newsletter-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: block;
+  overflow: hidden;
+  padding-top: 2px;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .form-not-sent .Newsletter-emailAddress {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2) inset;
+  font-weight: 400;
+  border: 1px solid #757678;
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: auto;
+  line-height: 1.6;
+  font-size: 30px;
+  padding: 1px 2px 1px 12px;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .form-not-sent .Newsletter-submit-button {
+  font-weight: 500;
+  line-height: 1;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  vertical-align: middle;
+  width: auto;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  background-color: #004ace;
+  color: #fff;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .form-not-sent .Newsletter-submit-button:hover {
+  background-color: #002f82;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .form-not-sent .highlander-newsletter-promise {
+  font-size: 11px;
+  margin-top: 12px;
+  opacity: 0.6;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer {
+  text-align: center;
+  margin: auto;
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-title {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+@media only screen and (min-width: 1400px) {
+  .football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-title {
+    font-size: 32px;
+  }
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-points {
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-points {
+    margin-bottom: 40px;
+  }
+}
+.football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-points .tournament-footer-point {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5;
+}
+@media only screen and (min-width: 768px) {
+  .football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-points .tournament-footer-point {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .football_pickme_banner .tournament_section .official-text-container .highlander-newsletter .tournament-footer .tournament-footer-points .tournament-footer-point {
+    font-size: 24px;
+  }
+}
+
+/*=================NFL_football_pickme_END=================*/
+/*=================NFL_STATES_PAGE_START=================*/
+.StatsLeadersCard {
+  background-color: #fff;
+}
+.StatsLeadersCard .Card-titleSeparate {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #656667;
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid #d9dbde;
+  padding: 16px;
+  margin: 0;
+}
+
+.TableBase-footer {
+  background-color: #fff;
+  border-top: 1px solid #d9dbde;
+  padding: 20px;
+  text-align: center;
+}
+.TableBase-footer .TableBase-footerItem {
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+}
+.TableBase-footer .TableBase-footerItem a {
+  color: #202121;
+}
+.TableBase-footer .TableBase-footerItem a:hover {
+  color: #0036b5;
+}
+
+.StatsLeadersCard-content {
+  padding: 20px;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo {
+  display: flex;
+  align-items: center;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-headshot .HeadshotAndLogoLockup-logo {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  z-index: 3;
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-headshot .HeadshotAndLogoLockup-headshot {
+  display: inline-block;
+  margin-left: -10%;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-headshot .HeadshotAndLogoLockup-headshot .Headshot-image {
+  background-color: #fff;
+  border: 1px solid #d9dbde;
+  border-radius: 50%;
+  box-sizing: content-box;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-rank {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #202121;
+  padding-right: 12px;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-playerName {
+  width: 250px;
+  max-width: 100%;
+  margin-left: 10px;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-playerName .PlayerName {
+  font-size: 14px;
+  font-weight: 500;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-playerName .PlayerName a {
+  color: #202121;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-playerName .PlayerName a:hover {
+  color: #0036b5;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-playerName .StatsLeadersCard-playerDetails .StatsLeadersCard-list {
+  display: flex;
+  justify-content: left;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-playerName .StatsLeadersCard-playerDetails .StatsLeadersCard-list .StatsLeadersCard-listItem {
+  font-size: 12px;
+  font-weight: 500;
+  color: #757678;
+  margin-left: 5px;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-featuredStat .StatsLeadersCard-statValue {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #202121;
+  text-align: right;
+}
+.StatsLeadersCard-content .StatsLeadersCard-cardInfo .StatsLeadersCard-featuredStat .StatsLeadersCard-statTitle {
+  font-weight: 400;
+  color: #4b4c4d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: right;
+}
+
+/*=================NFL_STATES_PAGE__END=================*//*# sourceMappingURL=style.css.map */
