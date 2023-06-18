@@ -5011,6 +5011,7 @@ footer,
     margin: auto;
 }
 
+
 .Page-colMain {
     width: 100%;
     border: 1px solid #d9dbde;
@@ -5241,11 +5242,20 @@ footer,
     .TableBase-legendColumnText {
         padding: 20px;
         margin-left: 5px;
+        font-size: 14px;
+        line-height: 18px;
 
         @include minwidth(586px) {
             margin-left: 10px;
         }
+
+        .TableBase-legendItem {
+            margin-bottom: 15px;
+
+        }
     }
+
+    .TableBase-legendIconText {}
 }
 
 /*=================NFL_STANDINGS_PAGE_END=================*/
@@ -5590,3 +5600,171 @@ footer,
 }
 
 /*=================NFL_STATES_PAGE__END=================*/
+
+
+
+/*=================NFL_Playoff_Picture _PAGE__START=================*/
+.PlayoffRaceMatchupCard {
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .PlayoffRaceMatcupCard-titleRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-bottom: 1px solid #d9dbde;
+
+        .PlayoffRaceMatcupCard-title-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #656667;
+
+            .PlayoffRaceMatcupCard-title_logo {
+                img {
+
+                    width: 30px;
+                }
+            }
+        }
+
+        .PlayoffRaceMatchupCard-promo {
+            font-size: 11px;
+            font-weight: 400;
+            color: #656667;
+        }
+    }
+
+    .PlayoffRaceMatchupCard-conferencesContainer {
+        padding: 10px;
+        margin: auto;
+
+        @include minwidth(768px) {
+            margin: 0px 5px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .PlayoffRaceMatchupCard-conference {
+            width: 450px;
+            max-width: 100%;
+            margin: auto;
+            margin-top: 30px;
+
+            .PlayoffRaceMatchupCard-matchup {
+
+                border: 0.5px solid #d9dbde;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                .PlayoffRaceMatchupCard-conferenceName {
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    line-height: 1.6;
+                    color: #fff;
+                    text-align: center;
+                    margin: auto;
+                    padding-right: 30px;
+                }
+
+
+
+                &.logo_afc {
+                    background-color: #ce202c;
+                    display: flex;
+                    height: 45px;
+                    overflow: hidden;
+                    align-items: center;
+                }
+
+                &.logo_nfc {
+                    background-color: #003b66;
+                    display: flex;
+                    height: 45px;
+                    overflow: hidden;
+                    align-items: center;
+                }
+
+                .logo_box {
+                    width: 80px;
+                    margin-left: 10px;
+                }
+
+
+                .PlayoffRaceMatchupCard-team {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 10px;
+
+                    .PlayoffRaceMatchupCard-teamSeed {
+                        margin: 0px 10px;
+                    }
+
+                    .TeamLogoNameLockup {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .TeamLogoNameLockup-logo {
+                            width: 30px;
+                            margin: 0px 5px;
+                        }
+
+                        .TeamLogoNameLockup-NameBox {
+
+
+                            .TeamLogoNameLockup-Name {
+                                a {
+                                    color: #202121;
+                                    font-size: 14px;
+                                    font-weight: 500;
+
+                                    &:hover {
+                                        color: #0036b5;
+                                    }
+                                }
+                            }
+
+                            .TeamLogoNameLockup-record {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: #202121;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+.filter_menu_section {
+    display: flex;
+
+    .filter-menu {
+        .current {
+            border: 1px solid #dddfe5;
+            font-size: 14px;
+            font-weight: 500px;
+            padding: 5px 25px;
+            background-color: #fff;
+
+            &:hover,
+            .active {
+                border: 1px solid #0a58ca;
+            }
+
+        }
+    }
+}
+
+
+/*=================NFL_Playoff_Picture _PAGE__END=================*/

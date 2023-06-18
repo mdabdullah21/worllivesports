@@ -4468,13 +4468,17 @@ footer .site_footer_copyright p,
 .TableBase-legend .TableBase-legendColumnText {
   padding: 20px;
   margin-left: 5px;
+  font-size: 14px;
+  line-height: 18px;
 }
 @media only screen and (min-width: 586px) {
   .TableBase-legend .TableBase-legendColumnText {
     margin-left: 10px;
   }
 }
-
+.TableBase-legend .TableBase-legendColumnText .TableBase-legendItem {
+  margin-bottom: 15px;
+}
 /*=================NFL_STANDINGS_PAGE_END=================*/
 /*=================NFL_TEAMS_PAGE_END=================*/
 .Page-colMain_wrapper-inner {
@@ -4748,4 +4752,129 @@ footer .site_footer_copyright p,
   text-align: right;
 }
 
-/*=================NFL_STATES_PAGE__END=================*//*# sourceMappingURL=style.css.map */
+/*=================NFL_STATES_PAGE__END=================*/
+/*=================NFL_Playoff_Picture _PAGE__START=================*/
+.PlayoffRaceMatchupCard {
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatcupCard-titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #d9dbde;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatcupCard-titleRow .PlayoffRaceMatcupCard-title-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #656667;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatcupCard-titleRow .PlayoffRaceMatcupCard-title-title .PlayoffRaceMatcupCard-title_logo img {
+  width: 30px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatcupCard-titleRow .PlayoffRaceMatchupCard-promo {
+  font-size: 11px;
+  font-weight: 400;
+  color: #656667;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer {
+  padding: 10px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  .PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer {
+    margin: 0px 5px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference {
+  width: 450px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup {
+  border: 0.5px solid #d9dbde;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup:not(:last-child) {
+  margin-bottom: 15px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-conferenceName {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding-right: 30px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup.logo_afc {
+  background-color: #ce202c;
+  display: flex;
+  height: 45px;
+  overflow: hidden;
+  align-items: center;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup.logo_nfc {
+  background-color: #003b66;
+  display: flex;
+  height: 45px;
+  overflow: hidden;
+  align-items: center;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .logo_box {
+  width: 80px;
+  margin-left: 10px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team .PlayoffRaceMatchupCard-teamSeed {
+  margin: 0px 10px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team .TeamLogoNameLockup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team .TeamLogoNameLockup .TeamLogoNameLockup-logo {
+  width: 30px;
+  margin: 0px 5px;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team .TeamLogoNameLockup .TeamLogoNameLockup-NameBox .TeamLogoNameLockup-Name a {
+  color: #202121;
+  font-size: 14px;
+  font-weight: 500;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team .TeamLogoNameLockup .TeamLogoNameLockup-NameBox .TeamLogoNameLockup-Name a:hover {
+  color: #0036b5;
+}
+.PlayoffRaceMatchupCard .PlayoffRaceMatchupCard-conferencesContainer .PlayoffRaceMatchupCard-conference .PlayoffRaceMatchupCard-matchup .PlayoffRaceMatchupCard-team .TeamLogoNameLockup .TeamLogoNameLockup-NameBox .TeamLogoNameLockup-record {
+  font-size: 12px;
+  font-weight: 400;
+  color: #202121;
+}
+
+.filter_menu_section {
+  display: flex;
+}
+.filter_menu_section .filter-menu .current {
+  border: 1px solid #dddfe5;
+  font-size: 14px;
+  font-weight: 500px;
+  padding: 5px 25px;
+  background-color: #fff;
+}
+.filter_menu_section .filter-menu .current:hover,
+.filter_menu_section .filter-menu .current .active {
+  border: 1px solid #0a58ca;
+}
+
+/*=================NFL_Playoff_Picture _PAGE__END=================*//*# sourceMappingURL=style.css.map */
