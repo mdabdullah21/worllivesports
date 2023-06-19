@@ -3798,11 +3798,11 @@ footer .site_footer_copyright p,
 .shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup .TeamLogoNameLockup-logo {
   width: 24px !important;
   height: auto;
-  margin-right: 10px;
 }
 .shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup .TeamLogoNameLockup-name {
   font-size: 14px;
   color: #202121;
+  margin-right: 10px;
 }
 .shedule_content .scrollbar-x .TableBase-shadows .TableBase-bodyTr .TableBase-bodyTd .CellLogoNameLockup .TeamLogoNameLockup-name:hover {
   color: #004ace;
@@ -4307,12 +4307,17 @@ footer .site_footer_copyright p,
   width: 100%;
 }
 .TableBase_scores .TableBase-headTh-grouped1 {
-  background-color: rgba(217, 219, 222, 0.4);
+  background-color: #D9DBDE;
   text-align: center !important;
+  text-transform: uppercase;
 }
 .TableBase_scores .TableBase-headTh-grouped2 {
   background-color: rgba(245, 246, 247, 0.5);
   text-align: right;
+}
+.TableBase_scores .TableBase-headTh-grouped3 {
+  background-color: #EAECEE;
+  text-transform: uppercase;
 }
 .TableBase_scores .TableBase_scores-theadtr,
 .TableBase_scores .TableBase-headTr {
@@ -4426,6 +4431,9 @@ footer .site_footer_copyright p,
 .TableBase_scores .TableBase-body .TableBase-bodyTr .TableBase-bodyTd .TeamLogoNameLockup .TeamLogoNameLockup-logo {
   width: 30px;
   margin-right: 7px;
+}
+.TableBase_scores .TableBase-body .TableBase-bodyTr .TableBase-bodyTd .TeamLogoNameLockup .TeamLogoNameLockup-name {
+  padding-right: 6px;
 }
 .TableBase_scores .TableBase-body .TableBase-bodyTr .TableBase-bodyTd .TeamLogoNameLockup .TeamLogoNameLockup-name .Team-name {
   color: #202121;

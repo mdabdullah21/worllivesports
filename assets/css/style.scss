@@ -4413,12 +4413,12 @@ footer,
                         .TeamLogoNameLockup-logo {
                             width: 24px !important;
                             height: auto;
-                            margin-right: 10px;
                         }
 
                         .TeamLogoNameLockup-name {
                             font-size: 14px;
                             color: #202121;
+                            margin-right: 10px;
 
                             &:hover {
                                 color: #004ace;
@@ -5053,15 +5053,21 @@ footer,
     width: 100%;
 
     .TableBase-headTh-grouped1 {
-        background-color: rgba(217, 219, 222, .4);
-        // border: 1px solid #d9dbde;
+        background-color: #D9DBDE;
+        // border-bottom: 1px solid #929294 !important;
         text-align: center !important;
+        text-transform: uppercase;
     }
 
     .TableBase-headTh-grouped2 {
         background-color: rgba(245, 246, 247, .5);
         text-align: right;
         // border: 1px solid #d9dbde;
+    }
+
+    .TableBase-headTh-grouped3 {
+        background-color: #EAECEE;
+        text-transform: uppercase;
 
 
     }
@@ -5190,6 +5196,8 @@ footer,
                     }
 
                     .TeamLogoNameLockup-name {
+                        padding-right: 6px;
+
                         .Team-name {
                             color: #202121;
                             transition: color .2s ease;
